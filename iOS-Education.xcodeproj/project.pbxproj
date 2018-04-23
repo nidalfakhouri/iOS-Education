@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21B708B90778B5411DE6BD13 /* Pods_iOS_Education.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24504DFE0AEF353EA85A2988 /* Pods_iOS_Education.framework */; };
 		74CDAF092089385C006F7548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF082089385C006F7548 /* AppDelegate.swift */; };
 		74CDAF0B2089385C006F7548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF0A2089385C006F7548 /* ViewController.swift */; };
 		74CDAF0E2089385C006F7548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CDAF0C2089385C006F7548 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047CA7EA1EA1D084E358BC65 /* Pods-iOS-Education.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Education.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Education/Pods-iOS-Education.release.xcconfig"; sourceTree = "<group>"; };
+		24504DFE0AEF353EA85A2988 /* Pods_iOS_Education.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Education.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CDAF052089385C006F7548 /* iOS-Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CDAF082089385C006F7548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74CDAF0A2089385C006F7548 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		74CDAF0F2089385D006F7548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CDAF122089385D006F7548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74CDAF142089385D006F7548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A5C082328ECB032FFD97EA /* Pods-iOS-Education.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Education.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Education/Pods-iOS-Education.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B708B90778B5411DE6BD13 /* Pods_iOS_Education.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F55D42B1E51BDEA0209BE5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24504DFE0AEF353EA85A2988 /* Pods_iOS_Education.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53FF31D428FA6F6FC8E749B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88A5C082328ECB032FFD97EA /* Pods-iOS-Education.debug.xcconfig */,
+				047CA7EA1EA1D084E358BC65 /* Pods-iOS-Education.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		74CDAEFC2089385B006F7548 = {
 			isa = PBXGroup;
 			children = (
 				74CDAF072089385C006F7548 /* iOS-Education */,
 				74CDAF062089385C006F7548 /* Products */,
+				53FF31D428FA6F6FC8E749B3 /* Pods */,
+				4F55D42B1E51BDEA0209BE5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74CDAF172089385D006F7548 /* Build configuration list for PBXNativeTarget "iOS-Education" */;
 			buildPhases = (
+				3332655BB19ED12CBB79E473 /* [CP] Check Pods Manifest.lock */,
 				74CDAF012089385C006F7548 /* Sources */,
 				74CDAF022089385C006F7548 /* Frameworks */,
 				74CDAF032089385C006F7548 /* Resources */,
+				F5585100CAAF283DB0A8EBE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3332655BB19ED12CBB79E473 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Education-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5585100CAAF283DB0A8EBE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Education/Pods-iOS-Education-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Education/Pods-iOS-Education-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74CDAF012089385C006F7548 /* Sources */ = {
@@ -278,15 +343,13 @@
 		};
 		74CDAF182089385D006F7548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88A5C082328ECB032FFD97EA /* Pods-iOS-Education.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QJ97J85B68;
 				INFOPLIST_FILE = "iOS-Education/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nidalfakhouri.iOS-Education";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +359,13 @@
 		};
 		74CDAF192089385D006F7548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047CA7EA1EA1D084E358BC65 /* Pods-iOS-Education.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QJ97J85B68;
 				INFOPLIST_FILE = "iOS-Education/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nidalfakhouri.iOS-Education";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
