@@ -1,0 +1,20 @@
+Course Outline:
+
+- Swift Basics with Playgrounds:
+- Swift Keywords, Default Types, Strings, Numbers, etc, Collections, Classes, Protocols, enums, Optionals, Variables, Functions, Completion Blocks, Control Flow, User Defined Types, Dispatch Queues (swift threading), etc.
+
+- Xcode and Project Environments
+- Debugging in Xcode
+
+- iOS Frameworks: Foundation and UIKit
+- Interface Builder and Storyboards
+- Labels, Buttons, Tables, Navigation, etc.
+- Autolayout
+
+- Common resources and websites
+- 3rd Party frameworks and Cocoapods (https://cocoapods.org).
+
+- Networking Options, system frameworks vs. AlamoFire
+- Public web service APIs and consuming JSON with Swift
+- Design Patterns in Swift
+- Integrating Data with the UI Classes (Building a real app)
