@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Examples"
-        
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
     }
 }
@@ -23,7 +22,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 7
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -35,12 +34,60 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell: UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        cell.textLabel?.text = "Test Cell"
+        
+        if indexPath.row == 0 {
+            cell.textLabel?.text = "Views"
+        }
+        else if indexPath.row == 1 {
+            cell.textLabel?.text = "Buttons And Labels"
+        }
+        else if indexPath.row == 2 {
+            cell.textLabel?.text = "Scroll Views"
+        }
+        else if indexPath.row == 3 {
+            cell.textLabel?.text = "Table Views"
+        }
+        else if indexPath.row == 4 {
+            cell.textLabel?.text = "Table Views Custom Cell"
+        }
+        else if indexPath.row == 5 {
+            cell.textLabel?.text = "Collection Views"
+        }
+        else if indexPath.row == 6 {
+            cell.textLabel?.text = "Collection Views Custom Cells"
+        }
+        
+        cell.accessoryType = .disclosureIndicator
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 {
+            
+        }
+        else if indexPath.row == 1 {
+            
+        }
+        else if indexPath.row == 2 {
+            
+        }
+        else if indexPath.row == 3 {
+            
+        }
+        else if indexPath.row == 4 {
+            
+        }
+        else if indexPath.row == 5 {
+            
+        }
+        else if indexPath.row == 6 {
+            
+        }
+        
         tableView.deselectRow(at: indexPath, animated:true)
     }
 }
