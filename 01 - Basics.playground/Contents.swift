@@ -21,7 +21,7 @@ if let string = optionalString {
     mutableString = string
 }
 
-// force unwrapping
+// force unwrapping - DO NOT DO THIS!!
 let aString: String = optionalStringNotNil!
 
 // non optional / non mutable
@@ -37,4 +37,9 @@ let foo3: String? = "foo"
 // optional / mutable
 var foo4: String? = "foo"
 
-// any type can be optional
+// ANY type can be optional
+
+
+// Operations with strings
+
+// Numbers
