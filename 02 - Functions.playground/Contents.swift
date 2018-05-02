@@ -68,7 +68,10 @@ func describePerson(firstName: String, lastName: String = "Doe", age: Int? = nil
     
     print(personString)
 }
+
+// you dont have to add values for default parameters
 describePerson(firstName: "nidal")
 describePerson(firstName: "nidal", lastName:"fakhouri")
+describePerson(firstName: "nidal", age: 40)
 describePerson(firstName: "nidal", lastName:"fakhouri", age: 35)
 
