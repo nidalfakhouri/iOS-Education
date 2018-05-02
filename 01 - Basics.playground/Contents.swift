@@ -43,3 +43,27 @@ var foo4: String? = "foo"
 // Operations with strings
 
 // Numbers
+let a = Int(10)
+let b = 10
+type(of: a)
+type(of: b)
+
+let c = Double(10)
+let d = 10.0
+type(of: c)
+type(of: d)
+
+// becuase numbers are structs, they can be optional also
+var x: Int?
+x = 10
+print(x)
+if let val = x {
+    print(val)
+}
+
+// numbders as objects, there are use cases for this
+// anytime you see "NS" it is a vestige from Objective-C and Steve Job's Company "Next Step"
+let number = NSNumber(value: 10)
+number.stringValue
+number.boolValue
+number.doubleValue
