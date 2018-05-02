@@ -11,10 +11,17 @@ protocol Informable {
     func generateString() -> String
 }
 
+//
 extension Informable {
     
     func generateString() -> String {
-        return "\(string) + \(number)"
+        
+        if let string = self.string {
+            return "\(string) + \(number)"
+        }
+        else {
+            return "the string value is nil + \(number)"
+        }
     }
 }
 
