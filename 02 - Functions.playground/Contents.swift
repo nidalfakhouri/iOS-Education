@@ -56,3 +56,19 @@ addToStringWithOptionalAndOptionalReturnType(stringToAdd: "bar")
 if let string = addToStringWithOptionalAndOptionalReturnType(stringToAdd: "bar") {
     print(string)
 }
+
+// default values for parameters
+func describePerson(firstName: String, lastName: String = "Doe", age: Int? = nil) {
+    
+    var personString = firstName + " " + lastName
+    
+    if let age = age {
+        personString = "\(personString) \(age)"
+    }
+    
+    print(personString)
+}
+describePerson(firstName: "nidal")
+describePerson(firstName: "nidal", lastName:"fakhouri")
+describePerson(firstName: "nidal", lastName:"fakhouri", age: 35)
+
