@@ -1,4 +1,3 @@
-//: Playground - noun: a place where people can play
 
 import UIKit
 
@@ -39,6 +38,7 @@ for (index, string) in array.enumerated() {
 print("------------------")
 
 // Loop option 5
+// we will talk more about this in closures
 array.forEach { print($0) }
 
 print("------------------")
