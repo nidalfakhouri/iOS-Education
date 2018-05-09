@@ -4,8 +4,10 @@ import UIKit
 // static vs mutable values
 let staticString = "static string"
 
+// Operations with strings
 var mutableString = "mutable string"
 mutableString += " foo"
+mutableString = "\(mutableString) plus another string"
 
 // optional vs non optional
 var nonOptionalString = "non optional string"
@@ -39,7 +41,6 @@ var foo4: String? = "foo"
 // ANY type can be optional
 
 
-// Operations with strings
 
 // Numbers
 let a = Int(10)

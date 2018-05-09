@@ -13,6 +13,8 @@
 		74CDAF0E2089385C006F7548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CDAF0C2089385C006F7548 /* Main.storyboard */; };
 		74CDAF102089385D006F7548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CDAF0F2089385D006F7548 /* Assets.xcassets */; };
 		74CDAF132089385D006F7548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CDAF112089385D006F7548 /* LaunchScreen.storyboard */; };
+		74D985FB20A38E6D004C237B /* ViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D985F920A38E6D004C237B /* ViewExampleViewController.swift */; };
+		74D985FC20A38E6D004C237B /* ViewExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74D985FA20A38E6D004C237B /* ViewExampleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		74CDAF0F2089385D006F7548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CDAF122089385D006F7548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74CDAF142089385D006F7548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D985F920A38E6D004C237B /* ViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExampleViewController.swift; sourceTree = "<group>"; };
+		74D985FA20A38E6D004C237B /* ViewExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewExampleViewController.xib; sourceTree = "<group>"; };
 		88A5C082328ECB032FFD97EA /* Pods-iOS-Education.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Education.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Education/Pods-iOS-Education.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,12 +84,22 @@
 			children = (
 				74CDAF082089385C006F7548 /* AppDelegate.swift */,
 				74CDAF0A2089385C006F7548 /* ViewController.swift */,
+				74D985F820A38E36004C237B /* Views */,
 				74CDAF0C2089385C006F7548 /* Main.storyboard */,
 				74CDAF0F2089385D006F7548 /* Assets.xcassets */,
 				74CDAF112089385D006F7548 /* LaunchScreen.storyboard */,
 				74CDAF142089385D006F7548 /* Info.plist */,
 			);
 			path = "iOS-Education";
+			sourceTree = "<group>";
+		};
+		74D985F820A38E36004C237B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74D985F920A38E6D004C237B /* ViewExampleViewController.swift */,
+				74D985FA20A38E6D004C237B /* ViewExampleViewController.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D985FC20A38E6D004C237B /* ViewExampleViewController.xib in Resources */,
 				74CDAF132089385D006F7548 /* LaunchScreen.storyboard in Resources */,
 				74CDAF102089385D006F7548 /* Assets.xcassets in Resources */,
 				74CDAF0E2089385C006F7548 /* Main.storyboard in Resources */,
@@ -201,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74CDAF0B2089385C006F7548 /* ViewController.swift in Sources */,
+				74D985FB20A38E6D004C237B /* ViewExampleViewController.swift in Sources */,
 				74CDAF092089385C006F7548 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

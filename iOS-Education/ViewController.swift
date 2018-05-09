@@ -67,7 +67,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.row == 0 {
-            
+            let viewExampleViewController = ViewExampleViewController(nibName: "ViewExampleViewController", bundle: nil)
+            navigationController?.pushViewController(viewExampleViewController, animated: true)
         }
         else if indexPath.row == 1 {
             
