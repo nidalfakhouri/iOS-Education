@@ -31,7 +31,9 @@ Course Outline:
 - Debugging in Xcode
 
 - iOS Frameworks: Foundation and UIKit
+- ViewControllers and Views
 - Interface Builder and Storyboards
+- Doing things in code vs xibs
 - Labels, Buttons, Tables, Navigation, etc.
 - Autolayout
 

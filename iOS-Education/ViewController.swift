@@ -71,7 +71,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             navigationController?.pushViewController(viewExampleViewController, animated: true)
         }
         else if indexPath.row == 1 {
-            
+            let buttonsAndLabelsExampleViewController = ButtonsAndLabelsExampleViewController(nibName: "ButtonsAndLabelsExampleViewController", bundle: nil)
+            navigationController?.pushViewController(buttonsAndLabelsExampleViewController, animated: true)
         }
         else if indexPath.row == 2 {
             

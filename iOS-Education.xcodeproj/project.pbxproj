@@ -15,6 +15,8 @@
 		74CDAF132089385D006F7548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CDAF112089385D006F7548 /* LaunchScreen.storyboard */; };
 		74D985FB20A38E6D004C237B /* ViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D985F920A38E6D004C237B /* ViewExampleViewController.swift */; };
 		74D985FC20A38E6D004C237B /* ViewExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74D985FA20A38E6D004C237B /* ViewExampleViewController.xib */; };
+		74D9860320A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9860120A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift */; };
+		74D9860420A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74D9860220A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		74CDAF142089385D006F7548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74D985F920A38E6D004C237B /* ViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExampleViewController.swift; sourceTree = "<group>"; };
 		74D985FA20A38E6D004C237B /* ViewExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewExampleViewController.xib; sourceTree = "<group>"; };
+		74D9860120A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsAndLabelsExampleViewController.swift; sourceTree = "<group>"; };
+		74D9860220A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonsAndLabelsExampleViewController.xib; sourceTree = "<group>"; };
 		88A5C082328ECB032FFD97EA /* Pods-iOS-Education.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Education.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Education/Pods-iOS-Education.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,10 @@
 				74CDAF082089385C006F7548 /* AppDelegate.swift */,
 				74CDAF0A2089385C006F7548 /* ViewController.swift */,
 				74D985F820A38E36004C237B /* Views */,
+				74D985FD20A3969F004C237B /* Buttons And Labels */,
+				74D985FE20A396B2004C237B /* Scroll Views */,
+				74D985FF20A396BF004C237B /* TableViews */,
+				74D9860020A396D0004C237B /* CollectionViews */,
 				74CDAF0C2089385C006F7548 /* Main.storyboard */,
 				74CDAF0F2089385D006F7548 /* Assets.xcassets */,
 				74CDAF112089385D006F7548 /* LaunchScreen.storyboard */,
@@ -100,6 +108,36 @@
 				74D985FA20A38E6D004C237B /* ViewExampleViewController.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		74D985FD20A3969F004C237B /* Buttons And Labels */ = {
+			isa = PBXGroup;
+			children = (
+				74D9860120A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift */,
+				74D9860220A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib */,
+			);
+			path = "Buttons And Labels";
+			sourceTree = "<group>";
+		};
+		74D985FE20A396B2004C237B /* Scroll Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Scroll Views";
+			sourceTree = "<group>";
+		};
+		74D985FF20A396BF004C237B /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		74D9860020A396D0004C237B /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +202,7 @@
 			files = (
 				74D985FC20A38E6D004C237B /* ViewExampleViewController.xib in Resources */,
 				74CDAF132089385D006F7548 /* LaunchScreen.storyboard in Resources */,
+				74D9860420A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib in Resources */,
 				74CDAF102089385D006F7548 /* Assets.xcassets in Resources */,
 				74CDAF0E2089385C006F7548 /* Main.storyboard in Resources */,
 			);
@@ -217,6 +256,7 @@
 			files = (
 				74CDAF0B2089385C006F7548 /* ViewController.swift in Sources */,
 				74D985FB20A38E6D004C237B /* ViewExampleViewController.swift in Sources */,
+				74D9860320A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift in Sources */,
 				74CDAF092089385C006F7548 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
