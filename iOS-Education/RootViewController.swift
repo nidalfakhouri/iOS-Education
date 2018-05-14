@@ -22,7 +22,7 @@ class RootViewController: UIViewController {
 extension RootViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 10
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,7 +56,19 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = "Collection Views"
         }
         else if indexPath.row == 6 {
-            cell.textLabel?.text = "Collection Views Custom Cells"
+            cell.textLabel?.text = "Autolayout"
+        }
+        else if indexPath.row == 7 {
+            cell.textLabel?.text = "Current Location"
+        }
+        else if indexPath.row == 8 {
+            cell.textLabel?.text = "Networking With NSURLSession"
+        }
+        else if indexPath.row == 9 {
+            cell.textLabel?.text = "Networking With AFNetworking"
+        }
+        else if indexPath.row == 10 {
+            cell.textLabel?.text = "Weather App"
         }
         
         cell.accessoryType = .disclosureIndicator
@@ -66,28 +78,44 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        var viewController: UIViewController? = nil
+        
         if indexPath.row == 0 {
-            let viewExampleViewController = ViewExampleViewController(nibName: "ViewExampleViewController", bundle: nil)
-            navigationController?.pushViewController(viewExampleViewController, animated: true)
+            viewController = ViewExampleViewController(nibName: "ViewExampleViewController", bundle: nil)
         }
         else if indexPath.row == 1 {
-            let buttonsAndLabelsExampleViewController = ButtonsAndLabelsExampleViewController(nibName: "ButtonsAndLabelsExampleViewController", bundle: nil)
-            navigationController?.pushViewController(buttonsAndLabelsExampleViewController, animated: true)
+            viewController = ButtonsAndLabelsExampleViewController(nibName: "ButtonsAndLabelsExampleViewController", bundle: nil)
         }
         else if indexPath.row == 2 {
-            
+            viewController = ScrollViewExampleViewController(nibName: "ScrollViewExampleViewController", bundle: nil)
         }
         else if indexPath.row == 3 {
-            
+            viewController = SimpleTableViewExampleViewController(nibName: "SimpleTableViewExampleViewController", bundle: nil)
         }
         else if indexPath.row == 4 {
-            
+            viewController = CustomTableViewExampleViewController(nibName: "CustomTableViewExampleViewController", bundle: nil)
         }
         else if indexPath.row == 5 {
-            
+            viewController = CollectionViewExampleViewController(nibName: "CollectionViewExampleViewController", bundle: nil)
         }
         else if indexPath.row == 6 {
-            
+            viewController = AutoLayoutExampleViewController(nibName: "AutoLayoutExampleViewController", bundle: nil)
+        }
+        else if indexPath.row == 7 {
+            viewController = CurrentLocationExampleViewController(nibName: "CurrentLocationExampleViewController", bundle: nil)
+        }
+        else if indexPath.row == 8 {
+            viewController = NSURLSessionExampleViewController(nibName: "NSURLSessionExampleViewController", bundle: nil)
+        }
+        else if indexPath.row == 9 {
+            viewController = AFNetworkingExampleViewController(nibName: "AFNetworkingExampleViewController", bundle: nil)
+        }
+        else if indexPath.row == 10 {
+            viewController = WeatherRootViewController(nibName: "WeatherRootViewController", bundle: nil)
+        }
+        
+        if let viewControllerToPush = viewController {
+            navigationController?.pushViewController(viewControllerToPush, animated: true)
         }
         
         tableView.deselectRow(at: indexPath, animated:true)

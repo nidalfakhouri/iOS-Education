@@ -15,6 +15,8 @@ class ViewExampleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Views"
     
         let viewRect = CGRect(x: 100, y: 100, width: 150, height: 150)
         codeView = UIView(frame: viewRect)

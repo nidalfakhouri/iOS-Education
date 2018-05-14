@@ -40,6 +40,9 @@ var foo4: String? = "foo"
 
 // ANY type can be optional
 
+// Booleans
+var isEnabled = true
+isEnabled = false
 
 
 // Numbers

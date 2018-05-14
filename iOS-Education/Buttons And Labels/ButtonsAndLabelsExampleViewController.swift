@@ -16,6 +16,8 @@ class ButtonsAndLabelsExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Buttons & Labels"
+        
         codeLabel = UILabel(frame: CGRect(x: 100, y: 60, width: 200, height: 30))
         codeLabel?.text = "Code Label"
         
