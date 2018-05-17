@@ -17,9 +17,7 @@ class CustomTableViewExampleViewController: UIViewController {
         super.viewDidLoad()
         title = "Custom Table View"
         
-        self.tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "CustomTableViewCell")
         self.tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
-        
         
         let person1 = Person(firstName: "nidal", lastName: "fakhouri", age: 35)
         let person2 = Person(firstName: "john", lastName: "doe", age: 26)
@@ -40,7 +38,7 @@ extension CustomTableViewExampleViewController: UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 92
+        return 92 // pulled for the xib height
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
