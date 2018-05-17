@@ -13,6 +13,9 @@ class ButtonsAndLabelsExampleViewController: UIViewController {
     var codeButton: UIButton?
     var codeLabel: UILabel?
     
+    @IBOutlet weak var xibLabel: UILabel!
+    @IBOutlet weak var xibButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +29,7 @@ class ButtonsAndLabelsExampleViewController: UIViewController {
         }
         
         codeButton = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 88))
-        codeButton?.addTarget(self, action: #selector(codeAction), for: .touchUpInside)
+        codeButton?.addTarget(self, action: #selector(codeButtonAction), for: .touchUpInside)
         codeButton?.setTitleColor(UIColor.black, for: .normal)
         codeButton?.setTitleColor(UIColor.white, for: .highlighted)
         codeButton?.setTitle("Code Button", for: .normal)
@@ -36,15 +39,14 @@ class ButtonsAndLabelsExampleViewController: UIViewController {
             view.addSubview(codeButton)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     // notice the "@objc" means this is explicitly available to objective c code
     // https://stackoverflow.com/questions/44390378/how-can-i-deal-with-objc-inference-deprecation-with-selector-in-swift-4
-    @objc func codeAction() {
+    @objc func codeButtonAction() {
         print("Code Button Tapped")
+    }
+
+    @IBAction func xibButtonAction(_ sender: Any) {
+        print("Xib Button Tapped")
     }
 }

@@ -27,6 +27,10 @@
 		7423AE2220AA2A1700E414EB /* WeatherRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE2020AA2A1700E414EB /* WeatherRootViewController.swift */; };
 		7423AE2320AA2A1700E414EB /* WeatherRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE2120AA2A1700E414EB /* WeatherRootViewController.xib */; };
 		7423AE2520AA2A6000E414EB /* WeatherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE2420AA2A6000E414EB /* WeatherDataManager.swift */; };
+		7423AE2820AA54DC00E414EB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE2620AA54DC00E414EB /* CustomTableViewCell.swift */; };
+		7423AE2920AA54DC00E414EB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE2720AA54DC00E414EB /* CustomTableViewCell.xib */; };
+		7423AE2C20AA54F400E414EB /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE2A20AA54F400E414EB /* CustomCollectionViewCell.swift */; };
+		7423AE2D20AA54F400E414EB /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */; };
 		74CDAF092089385C006F7548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF082089385C006F7548 /* AppDelegate.swift */; };
 		74CDAF0B2089385C006F7548 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF0A2089385C006F7548 /* RootViewController.swift */; };
 		74CDAF0E2089385C006F7548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CDAF0C2089385C006F7548 /* Main.storyboard */; };
@@ -36,6 +40,7 @@
 		74D985FC20A38E6D004C237B /* ViewExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74D985FA20A38E6D004C237B /* ViewExampleViewController.xib */; };
 		74D9860320A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9860120A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift */; };
 		74D9860420A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74D9860220A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib */; };
+		74E9D9C820AD144000763C77 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9D9C720AD144000763C77 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +65,10 @@
 		7423AE2020AA2A1700E414EB /* WeatherRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRootViewController.swift; sourceTree = "<group>"; };
 		7423AE2120AA2A1700E414EB /* WeatherRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherRootViewController.xib; sourceTree = "<group>"; };
 		7423AE2420AA2A6000E414EB /* WeatherDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataManager.swift; sourceTree = "<group>"; };
+		7423AE2620AA54DC00E414EB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		7423AE2720AA54DC00E414EB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		7423AE2A20AA54F400E414EB /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		74CDAF052089385C006F7548 /* iOS-Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CDAF082089385C006F7548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74CDAF0A2089385C006F7548 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +80,7 @@
 		74D985FA20A38E6D004C237B /* ViewExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewExampleViewController.xib; sourceTree = "<group>"; };
 		74D9860120A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsAndLabelsExampleViewController.swift; sourceTree = "<group>"; };
 		74D9860220A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonsAndLabelsExampleViewController.xib; sourceTree = "<group>"; };
+		74E9D9C720AD144000763C77 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		88A5C082328ECB032FFD97EA /* Pods-iOS-Education.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Education.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Education/Pods-iOS-Education.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +226,9 @@
 				7423ADF920AA208600E414EB /* SimpleTableViewExampleViewController.xib */,
 				7423AE0020AA20B800E414EB /* CustomTableViewExampleViewController.swift */,
 				7423AE0120AA20B800E414EB /* CustomTableViewExampleViewController.xib */,
+				7423AE2620AA54DC00E414EB /* CustomTableViewCell.swift */,
+				7423AE2720AA54DC00E414EB /* CustomTableViewCell.xib */,
+				74E9D9C720AD144000763C77 /* Person.swift */,
 			);
 			path = TableViews;
 			sourceTree = "<group>";
@@ -225,6 +238,8 @@
 			children = (
 				7423AE0820AA21A800E414EB /* CollectionViewExampleViewController.swift */,
 				7423AE0920AA21A800E414EB /* CollectionViewExampleViewController.xib */,
+				7423AE2A20AA54F400E414EB /* CustomCollectionViewCell.swift */,
+				7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -297,12 +312,14 @@
 				7423AE0320AA20B800E414EB /* CustomTableViewExampleViewController.xib in Resources */,
 				7423ADFF20AA209600E414EB /* ScrollViewExampleViewController.xib in Resources */,
 				74CDAF132089385D006F7548 /* LaunchScreen.storyboard in Resources */,
+				7423AE2920AA54DC00E414EB /* CustomTableViewCell.xib in Resources */,
 				74D9860420A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib in Resources */,
 				7423AE1920AA246000E414EB /* AFNetworkingExampleViewController.xib in Resources */,
 				7423AE1520AA244E00E414EB /* NSURLSessionExampleViewController.xib in Resources */,
 				74CDAF102089385D006F7548 /* Assets.xcassets in Resources */,
 				74CDAF0E2089385C006F7548 /* Main.storyboard in Resources */,
 				7423AE2320AA2A1700E414EB /* WeatherRootViewController.xib in Resources */,
+				7423AE2D20AA54F400E414EB /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +375,13 @@
 				7423AE1020AA243900E414EB /* CurrentLocationExampleViewController.swift in Sources */,
 				74D9860320A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift in Sources */,
 				74CDAF092089385C006F7548 /* AppDelegate.swift in Sources */,
+				7423AE2820AA54DC00E414EB /* CustomTableViewCell.swift in Sources */,
 				7423AE1420AA244E00E414EB /* NSURLSessionExampleViewController.swift in Sources */,
 				7423AE0220AA20B800E414EB /* CustomTableViewExampleViewController.swift in Sources */,
 				7423AE2520AA2A6000E414EB /* WeatherDataManager.swift in Sources */,
 				7423AE1820AA246000E414EB /* AFNetworkingExampleViewController.swift in Sources */,
+				74E9D9C820AD144000763C77 /* Person.swift in Sources */,
+				7423AE2C20AA54F400E414EB /* CustomCollectionViewCell.swift in Sources */,
 				7423ADFA20AA208600E414EB /* SimpleTableViewExampleViewController.swift in Sources */,
 				7423ADFE20AA209600E414EB /* ScrollViewExampleViewController.swift in Sources */,
 				7423AE1D20AA291C00E414EB /* AutoLayoutExampleViewController.swift in Sources */,

@@ -29,9 +29,11 @@ Course Outline:
 
 - Xcode and Project Environments
 - Debugging in Xcode
+- Do something that creates a crash
 
 - iOS Frameworks: Foundation and UIKit
 - ViewControllers and Views
+- Show basic full screen constraints early
 - Interface Builder and Storyboards
 - Doing things in code vs xibs
 - Labels, Buttons, Tables, Navigation, etc.
