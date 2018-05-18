@@ -20,8 +20,8 @@
 		7423AE1120AA243900E414EB /* CurrentLocationExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE0F20AA243900E414EB /* CurrentLocationExampleViewController.xib */; };
 		7423AE1420AA244E00E414EB /* NSURLSessionExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE1220AA244E00E414EB /* NSURLSessionExampleViewController.swift */; };
 		7423AE1520AA244E00E414EB /* NSURLSessionExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE1320AA244E00E414EB /* NSURLSessionExampleViewController.xib */; };
-		7423AE1820AA246000E414EB /* AFNetworkingExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE1620AA246000E414EB /* AFNetworkingExampleViewController.swift */; };
-		7423AE1920AA246000E414EB /* AFNetworkingExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE1720AA246000E414EB /* AFNetworkingExampleViewController.xib */; };
+		7423AE1820AA246000E414EB /* AlamofireNetworkingExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE1620AA246000E414EB /* AlamofireNetworkingExampleViewController.swift */; };
+		7423AE1920AA246000E414EB /* AlamofireNetworkingExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE1720AA246000E414EB /* AlamofireNetworkingExampleViewController.xib */; };
 		7423AE1D20AA291C00E414EB /* AutoLayoutExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE1B20AA291C00E414EB /* AutoLayoutExampleViewController.swift */; };
 		7423AE1E20AA291C00E414EB /* AutoLayoutExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE1C20AA291C00E414EB /* AutoLayoutExampleViewController.xib */; };
 		7423AE2220AA2A1700E414EB /* WeatherRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE2020AA2A1700E414EB /* WeatherRootViewController.swift */; };
@@ -59,8 +59,8 @@
 		7423AE0F20AA243900E414EB /* CurrentLocationExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentLocationExampleViewController.xib; sourceTree = "<group>"; };
 		7423AE1220AA244E00E414EB /* NSURLSessionExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSURLSessionExampleViewController.swift; sourceTree = "<group>"; };
 		7423AE1320AA244E00E414EB /* NSURLSessionExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSURLSessionExampleViewController.xib; sourceTree = "<group>"; };
-		7423AE1620AA246000E414EB /* AFNetworkingExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetworkingExampleViewController.swift; sourceTree = "<group>"; };
-		7423AE1720AA246000E414EB /* AFNetworkingExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFNetworkingExampleViewController.xib; sourceTree = "<group>"; };
+		7423AE1620AA246000E414EB /* AlamofireNetworkingExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkingExampleViewController.swift; sourceTree = "<group>"; };
+		7423AE1720AA246000E414EB /* AlamofireNetworkingExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlamofireNetworkingExampleViewController.xib; sourceTree = "<group>"; };
 		7423AE1B20AA291C00E414EB /* AutoLayoutExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutExampleViewController.swift; sourceTree = "<group>"; };
 		7423AE1C20AA291C00E414EB /* AutoLayoutExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLayoutExampleViewController.xib; sourceTree = "<group>"; };
 		7423AE2020AA2A1700E414EB /* WeatherRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRootViewController.swift; sourceTree = "<group>"; };
@@ -120,8 +120,8 @@
 			children = (
 				7423AE1220AA244E00E414EB /* NSURLSessionExampleViewController.swift */,
 				7423AE1320AA244E00E414EB /* NSURLSessionExampleViewController.xib */,
-				7423AE1620AA246000E414EB /* AFNetworkingExampleViewController.swift */,
-				7423AE1720AA246000E414EB /* AFNetworkingExampleViewController.xib */,
+				7423AE1620AA246000E414EB /* AlamofireNetworkingExampleViewController.swift */,
+				7423AE1720AA246000E414EB /* AlamofireNetworkingExampleViewController.xib */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 				74CDAF132089385D006F7548 /* LaunchScreen.storyboard in Resources */,
 				7423AE2920AA54DC00E414EB /* CustomTableViewCell.xib in Resources */,
 				74D9860420A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib in Resources */,
-				7423AE1920AA246000E414EB /* AFNetworkingExampleViewController.xib in Resources */,
+				7423AE1920AA246000E414EB /* AlamofireNetworkingExampleViewController.xib in Resources */,
 				7423AE1520AA244E00E414EB /* NSURLSessionExampleViewController.xib in Resources */,
 				74CDAF102089385D006F7548 /* Assets.xcassets in Resources */,
 				74CDAF0E2089385C006F7548 /* Main.storyboard in Resources */,
@@ -383,7 +383,7 @@
 				7423AE1420AA244E00E414EB /* NSURLSessionExampleViewController.swift in Sources */,
 				7423AE0220AA20B800E414EB /* CustomTableViewExampleViewController.swift in Sources */,
 				7423AE2520AA2A6000E414EB /* WeatherDataManager.swift in Sources */,
-				7423AE1820AA246000E414EB /* AFNetworkingExampleViewController.swift in Sources */,
+				7423AE1820AA246000E414EB /* AlamofireNetworkingExampleViewController.swift in Sources */,
 				74E9D9C820AD144000763C77 /* Person.swift in Sources */,
 				7423AE2C20AA54F400E414EB /* CustomCollectionViewCell.swift in Sources */,
 				7423ADFA20AA208600E414EB /* SimpleTableViewExampleViewController.swift in Sources */,

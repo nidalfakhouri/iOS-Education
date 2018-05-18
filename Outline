@@ -33,6 +33,7 @@ Course Outline:
 - Do something that creates a crash
 
 - iOS Frameworks: Foundation and UIKit
+- The AppDelegate
 - ViewControllers and Views
 - Show basic full screen constraints early
 - Interface Builder and Storyboards

@@ -39,39 +39,50 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.row == 0 {
             cell.textLabel?.text = "Views"
+            cell.accessoryType = .checkmark
         }
         else if indexPath.row == 1 {
             cell.textLabel?.text = "Buttons And Labels"
+            cell.accessoryType = .checkmark
         }
         else if indexPath.row == 2 {
             cell.textLabel?.text = "Scroll Views"
+            cell.accessoryType = .checkmark
         }
         else if indexPath.row == 3 {
             cell.textLabel?.text = "Table Views"
+            cell.accessoryType = .checkmark
         }
         else if indexPath.row == 4 {
             cell.textLabel?.text = "Table Views Custom Cell"
+            cell.accessoryType = .checkmark
         }
         else if indexPath.row == 5 {
             cell.textLabel?.text = "Collection Views"
+            cell.accessoryType = .disclosureIndicator
         }
         else if indexPath.row == 6 {
             cell.textLabel?.text = "Autolayout"
+            cell.accessoryType = .disclosureIndicator
         }
         else if indexPath.row == 7 {
             cell.textLabel?.text = "Current Location"
+            cell.accessoryType = .checkmark
         }
         else if indexPath.row == 8 {
             cell.textLabel?.text = "Networking With NSURLSession"
+            cell.accessoryType = .disclosureIndicator
         }
         else if indexPath.row == 9 {
-            cell.textLabel?.text = "Networking With AFNetworking"
+            cell.textLabel?.text = "Networking With Alamofire"
+            cell.accessoryType = .disclosureIndicator
         }
         else if indexPath.row == 10 {
             cell.textLabel?.text = "Weather App"
+            cell.accessoryType = .disclosureIndicator
         }
         
-        cell.accessoryType = .disclosureIndicator
+        
         
         return cell
     }
@@ -108,7 +119,7 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
             viewController = NSURLSessionExampleViewController(nibName: "NSURLSessionExampleViewController", bundle: nil)
         }
         else if indexPath.row == 9 {
-            viewController = AFNetworkingExampleViewController(nibName: "AFNetworkingExampleViewController", bundle: nil)
+            viewController = AlamofireNetworkingExampleViewController(nibName: "AlamofireNetworkingExampleViewController", bundle: nil)
         }
         else if indexPath.row == 10 {
             viewController = WeatherRootViewController(nibName: "WeatherRootViewController", bundle: nil)

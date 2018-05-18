@@ -56,8 +56,8 @@ if let string = addToStringWithOptionalAndOptionalReturnType(stringToAdd: "bar")
     print(string)
 }
 
-// default values for parameters
-func describePerson(firstName: String, lastName: String = "Doe", age: Int? = nil) {
+// default values for parameters plus silencing parameter labels in call with '_'
+func describePerson(_ firstName: String, lastName: String = "Doe", age: Int? = nil) {
     
     var personString = firstName + " " + lastName
     
@@ -69,8 +69,8 @@ func describePerson(firstName: String, lastName: String = "Doe", age: Int? = nil
 }
 
 // you dont have to add values for default parameters
-describePerson(firstName: "nidal")
-describePerson(firstName: "nidal", lastName:"fakhouri")
-describePerson(firstName: "nidal", age: 40)
-describePerson(firstName: "nidal", lastName:"fakhouri", age: 35)
+describePerson("nidal")
+describePerson("nidal", lastName:"fakhouri")
+describePerson("nidal", age: 40)
+describePerson("nidal", lastName:"fakhouri", age: 35)
 

@@ -56,7 +56,7 @@ class ScrollViewExampleViewController: UIViewController {
 extension ScrollViewExampleViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
+        print("content offset: \(scrollView.contentOffset)")
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
