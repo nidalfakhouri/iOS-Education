@@ -31,6 +31,7 @@
 		7423AE2920AA54DC00E414EB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE2720AA54DC00E414EB /* CustomTableViewCell.xib */; };
 		7423AE2C20AA54F400E414EB /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE2A20AA54F400E414EB /* CustomCollectionViewCell.swift */; };
 		7423AE2D20AA54F400E414EB /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */; };
+		7468A22F20AE4AB9004A08AA /* LARGE_elevation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7468A22E20AE4AB9004A08AA /* LARGE_elevation.jpg */; };
 		74CDAF092089385C006F7548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF082089385C006F7548 /* AppDelegate.swift */; };
 		74CDAF0B2089385C006F7548 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF0A2089385C006F7548 /* RootViewController.swift */; };
 		74CDAF0E2089385C006F7548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CDAF0C2089385C006F7548 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		7423AE2720AA54DC00E414EB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		7423AE2A20AA54F400E414EB /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		7468A22E20AE4AB9004A08AA /* LARGE_elevation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LARGE_elevation.jpg; sourceTree = "<group>"; };
 		74CDAF052089385C006F7548 /* iOS-Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CDAF082089385C006F7548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74CDAF0A2089385C006F7548 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			children = (
 				7423ADFC20AA209600E414EB /* ScrollViewExampleViewController.swift */,
 				7423ADFD20AA209600E414EB /* ScrollViewExampleViewController.xib */,
+				7468A22E20AE4AB9004A08AA /* LARGE_elevation.jpg */,
 			);
 			path = "Scroll Views";
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				7423AE1120AA243900E414EB /* CurrentLocationExampleViewController.xib in Resources */,
 				7423AE1E20AA291C00E414EB /* AutoLayoutExampleViewController.xib in Resources */,
 				7423ADFB20AA208600E414EB /* SimpleTableViewExampleViewController.xib in Resources */,
+				7468A22F20AE4AB9004A08AA /* LARGE_elevation.jpg in Resources */,
 				7423AE0320AA20B800E414EB /* CustomTableViewExampleViewController.xib in Resources */,
 				7423ADFF20AA209600E414EB /* ScrollViewExampleViewController.xib in Resources */,
 				74CDAF132089385D006F7548 /* LaunchScreen.storyboard in Resources */,
