@@ -23,7 +23,8 @@ class NSURLSessionExampleViewController: UIViewController {
 
         dataTask?.cancel()
         
-        let urlString = "http://www.api.openweathermap.org/data/2.5/weather?q=London"
+        let urlString = "http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=\(WeatherDataManager.shared.APPID)"
+        
         if let url = URL(string: urlString) {
 
             dataTask = defaultSession.dataTask(with: url) { data, response, error in
@@ -32,14 +33,12 @@ class NSURLSessionExampleViewController: UIViewController {
                     let errorMessage = "DataTask error: " + error.localizedDescription + "\n"
                     print(errorMessage)
                 }
-                else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200 {
-                    
-                    let string = String.init(data: data, encoding: .utf8)
-                    print(string)
-                    
-                    if let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) {
-                        print(json)
-                    }
+                else if let data = data,
+                        let response = response as? HTTPURLResponse,
+                        let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
+                        response.statusCode == 200
+                {
+                    print(json)
                 }
             }
             

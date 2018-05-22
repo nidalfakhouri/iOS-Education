@@ -4,5 +4,6 @@ use_frameworks!
 
 target 'iOS-Education' do
   # Pods for iOS-Education
-  pod 'Alamofire', '~> 4.7'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 end

@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class WeatherDataManager {
+    
+    ///
+    static let shared = WeatherDataManager()
+    
+    /// Get your own! https://openweathermap.org/appid#use*
+    let APPID = "26702f89005804f905856412e6cec319"
+}

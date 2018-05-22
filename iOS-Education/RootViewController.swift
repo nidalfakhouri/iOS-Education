@@ -71,11 +71,11 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
         }
         else if indexPath.row == 8 {
             cell.textLabel?.text = "Networking With NSURLSession"
-            cell.accessoryType = .disclosureIndicator
+            cell.accessoryType = .checkmark
         }
         else if indexPath.row == 9 {
             cell.textLabel?.text = "Networking With Alamofire"
-            cell.accessoryType = .disclosureIndicator
+            cell.accessoryType = .checkmark
         }
         else if indexPath.row == 10 {
             cell.textLabel?.text = "Weather App"
