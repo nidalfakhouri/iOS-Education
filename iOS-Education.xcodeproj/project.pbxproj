@@ -32,6 +32,7 @@
 		7423AE2C20AA54F400E414EB /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE2A20AA54F400E414EB /* CustomCollectionViewCell.swift */; };
 		7423AE2D20AA54F400E414EB /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */; };
 		7468A22F20AE4AB9004A08AA /* LARGE_elevation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7468A22E20AE4AB9004A08AA /* LARGE_elevation.jpg */; };
+		74BD844520B3BC3600C25AF2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BD844420B3BC3600C25AF2 /* WeatherData.swift */; };
 		74CDAF092089385C006F7548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF082089385C006F7548 /* AppDelegate.swift */; };
 		74CDAF0B2089385C006F7548 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF0A2089385C006F7548 /* RootViewController.swift */; };
 		74CDAF0E2089385C006F7548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CDAF0C2089385C006F7548 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		7423AE2A20AA54F400E414EB /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		7468A22E20AE4AB9004A08AA /* LARGE_elevation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LARGE_elevation.jpg; sourceTree = "<group>"; };
+		74BD844420B3BC3600C25AF2 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		74CDAF052089385C006F7548 /* iOS-Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CDAF082089385C006F7548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74CDAF0A2089385C006F7548 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				7423AE2020AA2A1700E414EB /* WeatherRootViewController.swift */,
 				7423AE2120AA2A1700E414EB /* WeatherRootViewController.xib */,
 				7423AE2420AA2A6000E414EB /* WeatherDataManager.swift */,
+				74BD844420B3BC3600C25AF2 /* WeatherData.swift */,
 			);
 			path = "Weather App Example";
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				7423ADFA20AA208600E414EB /* SimpleTableViewExampleViewController.swift in Sources */,
 				7423ADFE20AA209600E414EB /* ScrollViewExampleViewController.swift in Sources */,
 				7423AE1D20AA291C00E414EB /* AutoLayoutExampleViewController.swift in Sources */,
+				74BD844520B3BC3600C25AF2 /* WeatherData.swift in Sources */,
 				7423AE0A20AA21A800E414EB /* CollectionViewExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,7 +543,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QJ97J85B68;
 				INFOPLIST_FILE = "iOS-Education/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nidalfakhouri.iOS-Education";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -555,7 +562,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QJ97J85B68;
 				INFOPLIST_FILE = "iOS-Education/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nidalfakhouri.iOS-Education";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

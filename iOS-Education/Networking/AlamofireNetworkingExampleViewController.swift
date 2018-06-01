@@ -22,10 +22,18 @@ class AlamofireNetworkingExampleViewController: UIViewController {
         Alamofire.request(urlString).responseJSON { (responseData) -> Void in
             if let data = responseData.result.value {
                 let swiftyJsonVar = JSON(data)
-                let temp = swiftyJsonVar["main"]["temp"]
                 print(swiftyJsonVar)
                 print("--------------------")
+                
+                /*
+                let temp = swiftyJsonVar["main"]["temp"]
                 print(temp)
+                print("--------------------")
+                */
+                
+                let weather = WeatherData(json: swiftyJsonVar)
+                print(weather.description)
+                
             }
         }
     }
