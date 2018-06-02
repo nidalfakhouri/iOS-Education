@@ -59,6 +59,7 @@ class WeatherData {
     public var sunrise: Date?
     public var sunset: Date?
     public var date: Date?
+    public var iconCode: String?
     
     public convenience init(name: String?, json: JSON) {
         self.init(json: json)
@@ -75,6 +76,7 @@ class WeatherData {
         // "json["weather"].first?.0" would mean we want the string
         if let weatherJSON = json["weather"].first?.1 {
             self.weatherDescription = weatherJSON["description"].rawValue as? String
+            self.iconCode = weatherJSON["icon"].rawValue as? String
         }
         
         self.temperatureInKelvin = json["main"]["temp"].rawValue as? Double
@@ -91,6 +93,8 @@ class WeatherData {
         if let dateUnixTime = json["dt"].rawValue as? Double {
             self.date = Date(timeIntervalSince1970: dateUnixTime)
         }
+        
+        
     }
     
     // shows the use of an computed property using an guard-let
@@ -106,6 +110,15 @@ class WeatherData {
     public var temperatureInFahrenheit: Double? {
         if let temperatureInKelvin = self.temperatureInKelvin {
             return (temperatureInKelvin * (9/5)) - 459.67
+        }
+        else {
+            return nil
+        }
+    }
+    
+    public var iconURL: URL? {
+        if let iconCode = self.iconCode {
+            return URL(string: "http://openweathermap.org/img/w/\(iconCode).png")
         }
         else {
             return nil

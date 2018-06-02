@@ -13,13 +13,13 @@ import SwiftyJSON
 
 class WeatherDataManager {
     
-    ///
+    /// the shared instance singleton object
     static let shared = WeatherDataManager()
     
     /// Get your own! https://openweathermap.org/appid#use*
     let APPID = "26702f89005804f905856412e6cec319"
     
-    ///
+    /// get a single weather data object for a location
     func getWeatherFor(coordinate: CLLocationCoordinate2D, completion: @escaping (WeatherData?)->()) {
         
         let urlString = "http://api.openweathermap.org/data/2.5/weather?lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&APPID=\(WeatherDataManager.shared.APPID)"
@@ -36,6 +36,7 @@ class WeatherDataManager {
         }
     }
     
+    /// get 5 days of weather forecasts in 3 hour increments, returns about 40 entries
     func get5DayWeatherForecastFor(coordinate: CLLocationCoordinate2D, completion: @escaping ([WeatherData]?)->()) {
         
         let urlString = "http://api.openweathermap.org/data/2.5/forecast?lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&APPID=\(WeatherDataManager.shared.APPID)"

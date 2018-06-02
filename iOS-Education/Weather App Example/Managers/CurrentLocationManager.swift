@@ -11,24 +11,15 @@ import CoreLocation
 
 protocol CurrentLocationManagerDelegate {
     func didUpdateLocation(location: CLLocation)
+    func didFailWithError(error: Error)
 }
 
 class CurrentLocationManager: NSObject {
     
     public static let shared = CurrentLocationManager()
-    fileprivate let locationManager = CLLocationManager()
     public private(set) var lastLocationFix: CLLocation? // makes it readonly externally, but can still write internally
-    
-    // use the didset method to allow the delegate to report the last fix if we have re assigned the delegate
-    public var delegate: CurrentLocationManagerDelegate? {
-        didSet {
-            if let location = self.lastLocationFix {
-                delegate?.didUpdateLocation(location: location)
-            }
-            
-            requestLocation()
-        }
-    }
+    fileprivate let locationManager = CLLocationManager()
+    fileprivate var delegate: CurrentLocationManagerDelegate?
     
     override public init() {
         super.init()
@@ -37,6 +28,16 @@ class CurrentLocationManager: NSObject {
         locationManager.distanceFilter = 50.0
         // dont forget to add a usage description
         // https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization
+    }
+    
+    public func requestLocationWithDelegate(_ delegate: CurrentLocationManagerDelegate?) {
+        self.delegate = delegate
+        
+        if let location = self.lastLocationFix {
+            self.delegate?.didUpdateLocation(location: location)
+        }
+
+        requestLocation()
     }
     
     public func requestLocation() {
@@ -62,6 +63,6 @@ extension CurrentLocationManager: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        
+        delegate?.didFailWithError(error: error)
     }
 }

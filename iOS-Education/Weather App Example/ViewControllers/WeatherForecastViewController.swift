@@ -16,8 +16,14 @@ class WeatherForecastViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        CurrentLocationManager.shared.delegate = self
+        title = "5 Day Forecast"
+        CurrentLocationManager.shared.requestLocationWithDelegate(self)
         self.tableView.register(UINib(nibName: "WeatherDataTableViewCell", bundle: nil), forCellReuseIdentifier: "WeatherDataTableViewCell")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(getLocationFix))
+    }
+    
+    @objc func getLocationFix() {
+        CurrentLocationManager.shared.requestLocation()
     }
 }
 
@@ -62,5 +68,9 @@ extension WeatherForecastViewController: CurrentLocationManagerDelegate {
                 // show alert
             }
         }
+    }
+    
+    func didFailWithError(error: Error) {
+        
     }
 }
