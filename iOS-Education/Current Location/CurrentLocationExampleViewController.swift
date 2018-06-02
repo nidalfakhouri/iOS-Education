@@ -22,7 +22,6 @@ class CurrentLocationExampleViewController: UIViewController {
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
         locationManager.distanceFilter = 50.0
-        
         // dont forget to add a usage description
         // https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization
     }

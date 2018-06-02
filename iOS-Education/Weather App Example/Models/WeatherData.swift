@@ -58,8 +58,15 @@ class WeatherData {
     public var humidity: Double?
     public var sunrise: Date?
     public var sunset: Date?
+    public var date: Date?
+    
+    public convenience init(name: String?, json: JSON) {
+        self.init(json: json)
+        self.name = name
+    }
     
     public init(json: JSON) {
+        
         self.name = json["name"].rawValue as? String
         
         // weather is an array of dictionaries
@@ -79,6 +86,10 @@ class WeatherData {
         
         if let sunsetUnixTime = json["sys"]["sunset"].rawValue as? Double {
             self.sunset = Date(timeIntervalSince1970: sunsetUnixTime)
+        }
+        
+        if let dateUnixTime = json["dt"].rawValue as? Double {
+            self.date = Date(timeIntervalSince1970: dateUnixTime)
         }
     }
     
@@ -111,6 +122,7 @@ class WeatherData {
         description += "humidity                : \(String(describing: humidity))\n"
         description += "sunrise                 : \(String(describing: sunrise))\n"
         description += "sunset                  : \(String(describing: sunrise))\n"
+        description += "date                    : \(String(describing: date))\n"
         return description
     }
 }

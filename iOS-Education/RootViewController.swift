@@ -22,7 +22,7 @@ class RootViewController: UIViewController {
 extension RootViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 11
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -81,8 +81,6 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = "Weather App"
             cell.accessoryType = .disclosureIndicator
         }
-        
-        
         
         return cell
     }
