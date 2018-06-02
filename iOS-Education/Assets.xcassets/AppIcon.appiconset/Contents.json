@@ -1,111 +1,111 @@
 {
   "images" : [
-    {
+	{
       "size" : "20x20",
-      "idiom" : "iphone",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-20@2x.png",
-      "scale" : "2x"
+      "idiom": "iphone",
+	  "filename" : "RainbowLogo-20@2x.png",
+      "scale": "2x"
+    },
+	{
+      "size" : "20x20",
+      "idiom": "iphone",
+	  "filename" : "RainbowLogo-20@3x.png",
+      "scale": "3x"
+    },
+	{
+      "size" : "20x20",
+      "idiom": "ipad",
+	  "filename" : "RainbowLogo-20.png",
+      "scale": "1x"
     },
     {
       "size" : "20x20",
-      "idiom" : "iphone",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-20@3x.png",
-      "scale" : "3x"
+      "idiom": "ipad",
+	  "filename" : "RainbowLogo-20@2x.png",
+      "scale": "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-29@2x.png",
+      "filename" : "RainbowLogo-29@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-29@3x.png",
+      "filename" : "RainbowLogo-29@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-40@2x.png",
+      "filename" : "RainbowLogo-40@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-40@3x.png",
+      "filename" : "RainbowLogo-40@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-60@2x.png",
+      "filename" : "RainbowLogo-60@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-60@3x.png",
+      "filename" : "RainbowLogo-60@3x.png",
       "scale" : "3x"
     },
     {
-      "size" : "20x20",
-      "idiom" : "ipad",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-20.png",
-      "scale" : "1x"
-    },
-    {
-      "size" : "20x20",
-      "idiom" : "ipad",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-20@2x.png",
-      "scale" : "2x"
-    },
-    {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-29.png",
+      "filename" : "RainbowLogo-29.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-29@2x.png",
+      "filename" : "RainbowLogo-29@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-40.png",
+      "filename" : "RainbowLogo-40.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-40@2x.png",
+      "filename" : "RainbowLogo-40@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-76.png",
+      "filename" : "RainbowLogo-76.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-76@2x.png",
+      "filename" : "RainbowLogo-76@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-83.5@2x.png",
+      "filename" : "RainbowLogo-83.5@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "1000px-Apple_Computer_Logo_rainbow-1024.png",
+      "filename" : "RainbowLogo-1024.png",
       "scale" : "1x"
     }
   ],
