@@ -22,6 +22,7 @@ class WeatherRootViewController: UIViewController {
         CurrentLocationManager.shared.requestLocationWithDelegate(self)
         title = "Current Weather"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(getLocationFix))
+        clearUI()
     }
     
     @IBAction func showWeatherForecastAction(_ sender: Any) {
@@ -35,7 +36,7 @@ class WeatherRootViewController: UIViewController {
     
     func updateUIWith(_ weatherData: WeatherData) {
         
-        if let name = weatherData.name, let weatherDescription = weatherData.weatherDescription, let temperatureInFahrenheit = weatherData.temperatureInFahrenheit {
+        if let name = weatherData.name, let temperatureInFahrenheit = weatherData.temperatureInFahrenheit, let weatherDescription = weatherData.weatherDescription {
             cityDescriptionLabel.text = name + " " + String(format: "%2.f˚", temperatureInFahrenheit) + " " + weatherDescription
         }
         
@@ -70,8 +71,10 @@ class WeatherRootViewController: UIViewController {
     
     func clearUI() {
         self.cityDescriptionLabel.text = "-----"
-        self.iconImageView.image = nil
         self.sunriseSunsetLabel.text = "-----"
+        self.humidityLabel.text = "-----"
+        self.timeLabel.text = "-----"
+        self.iconImageView.image = nil
     }
 }
 
