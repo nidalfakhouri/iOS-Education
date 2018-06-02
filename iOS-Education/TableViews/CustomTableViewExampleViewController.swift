@@ -38,7 +38,7 @@ extension CustomTableViewExampleViewController: UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 92 // pulled for the xib height
+        return 92 // pulled from the xib height
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

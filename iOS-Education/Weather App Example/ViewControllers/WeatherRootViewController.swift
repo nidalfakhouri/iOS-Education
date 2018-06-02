@@ -25,7 +25,7 @@ class WeatherRootViewController: UIViewController {
 extension WeatherRootViewController: CurrentLocationManagerDelegate {
     
     func didUpdateLocation(location: CLLocation) {
-        WeatherDataManager.shared.get5DayWeatherForecastFor(coordinate: location.coordinate) { (forecasts) in
+        WeatherDataManager.shared.getWeatherFor(coordinate: location.coordinate) { (weather) in
             
         }
     }

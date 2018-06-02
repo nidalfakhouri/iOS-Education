@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		21B708B90778B5411DE6BD13 /* Pods_iOS_Education.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24504DFE0AEF353EA85A2988 /* Pods_iOS_Education.framework */; };
+		740CF2C120C22B2D0026DE63 /* WeatherDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CF2BF20C22B2D0026DE63 /* WeatherDataTableViewCell.swift */; };
+		740CF2C220C22B2D0026DE63 /* WeatherDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 740CF2C020C22B2D0026DE63 /* WeatherDataTableViewCell.xib */; };
 		7423ADFA20AA208600E414EB /* SimpleTableViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423ADF820AA208600E414EB /* SimpleTableViewExampleViewController.swift */; };
 		7423ADFB20AA208600E414EB /* SimpleTableViewExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423ADF920AA208600E414EB /* SimpleTableViewExampleViewController.xib */; };
 		7423ADFE20AA209600E414EB /* ScrollViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423ADFC20AA209600E414EB /* ScrollViewExampleViewController.swift */; };
@@ -51,6 +53,8 @@
 /* Begin PBXFileReference section */
 		047CA7EA1EA1D084E358BC65 /* Pods-iOS-Education.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Education.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Education/Pods-iOS-Education.release.xcconfig"; sourceTree = "<group>"; };
 		24504DFE0AEF353EA85A2988 /* Pods_iOS_Education.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Education.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		740CF2BF20C22B2D0026DE63 /* WeatherDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataTableViewCell.swift; sourceTree = "<group>"; };
+		740CF2C020C22B2D0026DE63 /* WeatherDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDataTableViewCell.xib; sourceTree = "<group>"; };
 		7423ADF820AA208600E414EB /* SimpleTableViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewExampleViewController.swift; sourceTree = "<group>"; };
 		7423ADF920AA208600E414EB /* SimpleTableViewExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableViewExampleViewController.xib; sourceTree = "<group>"; };
 		7423ADFC20AA209600E414EB /* ScrollViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewExampleViewController.swift; sourceTree = "<group>"; };
@@ -279,6 +283,8 @@
 				7423AE2120AA2A1700E414EB /* WeatherRootViewController.xib */,
 				74F82BA120C1DA840026EC3E /* WeatherForecastViewController.swift */,
 				74F82BA220C1DA840026EC3E /* WeatherForecastViewController.xib */,
+				740CF2BF20C22B2D0026DE63 /* WeatherDataTableViewCell.swift */,
+				740CF2C020C22B2D0026DE63 /* WeatherDataTableViewCell.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -349,6 +355,7 @@
 				7423AE1E20AA291C00E414EB /* AutoLayoutExampleViewController.xib in Resources */,
 				7423ADFB20AA208600E414EB /* SimpleTableViewExampleViewController.xib in Resources */,
 				7468A22F20AE4AB9004A08AA /* LARGE_elevation.jpg in Resources */,
+				740CF2C220C22B2D0026DE63 /* WeatherDataTableViewCell.xib in Resources */,
 				7423AE0320AA20B800E414EB /* CustomTableViewExampleViewController.xib in Resources */,
 				7423ADFF20AA209600E414EB /* ScrollViewExampleViewController.xib in Resources */,
 				74CDAF132089385D006F7548 /* LaunchScreen.storyboard in Resources */,
@@ -412,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740CF2C120C22B2D0026DE63 /* WeatherDataTableViewCell.swift in Sources */,
 				74F82BA320C1DA840026EC3E /* WeatherForecastViewController.swift in Sources */,
 				7423AE2220AA2A1700E414EB /* WeatherRootViewController.swift in Sources */,
 				74CDAF0B2089385C006F7548 /* RootViewController.swift in Sources */,
