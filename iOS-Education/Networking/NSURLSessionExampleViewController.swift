@@ -36,9 +36,13 @@ class NSURLSessionExampleViewController: UIViewController {
                 else if let data = data,
                         let response = response as? HTTPURLResponse,
                         let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
+                        let jsonDictionary = json as? [String : AnyObject],
                         response.statusCode == 200
                 {
-                    print(json)
+                    print(jsonDictionary)
+                    if let main = jsonDictionary["main"] {
+                        print(main["temp"])
+                    }
                 }
             }
             

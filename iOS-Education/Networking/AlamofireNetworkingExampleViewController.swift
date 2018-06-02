@@ -24,16 +24,10 @@ class AlamofireNetworkingExampleViewController: UIViewController {
                 let swiftyJsonVar = JSON(data)
                 print(swiftyJsonVar)
                 print("--------------------")
-                
-                /*
+        
                 let temp = swiftyJsonVar["main"]["temp"]
                 print(temp)
                 print("--------------------")
-                */
-                
-                let weather = WeatherData(json: swiftyJsonVar)
-                print(weather.description)
-                
             }
         }
     }
