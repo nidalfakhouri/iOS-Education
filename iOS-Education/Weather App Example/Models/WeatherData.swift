@@ -93,8 +93,6 @@ class WeatherData {
         if let dateUnixTime = json["dt"].rawValue as? Double {
             self.date = Date(timeIntervalSince1970: dateUnixTime)
         }
-        
-        
     }
     
     // shows the use of an computed property using an guard-let
@@ -122,6 +120,15 @@ class WeatherData {
         }
         else {
             return nil
+        }
+    }
+    
+    public func loadIcon(completion: @escaping (UIImage?)->()) {
+        DispatchQueue.global().async {
+            if let url = self.iconURL, let data = try? Data(contentsOf: url) {
+                let image = UIImage(data: data)
+                completion(image)
+            }
         }
     }
     

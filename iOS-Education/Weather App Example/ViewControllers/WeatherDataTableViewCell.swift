@@ -29,9 +29,10 @@ class WeatherDataTableViewCell: UITableViewCell {
             descriptionLabel.text = String(format: "%2.f˚", temperatureInFahrenheit) + " " + String(format: "(%2.f%% Humidity)", humidity) + " " + weatherDescription
         }
         
-        if let url = weatherData.iconURL {
-            if let data = try? Data(contentsOf: url) {
-                iconImageView.image = UIImage(data: data)
+        // UIKit is not thread safe and all operation must happen on the main thread
+        weatherData.loadIcon { (image) in
+            DispatchQueue.main.async {
+                self.iconImageView.image = image
             }
         }
         

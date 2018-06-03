@@ -12,6 +12,7 @@ import CoreLocation
 class WeatherForecastViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingActivityIndicatorView: UIActivityIndicatorView!
     var forecasts: [WeatherData] = [WeatherData]()
     
     override func viewDidLoad() {
@@ -60,12 +61,25 @@ extension WeatherForecastViewController: CurrentLocationManagerDelegate {
     
     func didUpdateLocation(location: CLLocation) {
         WeatherDataManager.shared.get5DayWeatherForecastFor(coordinate: location.coordinate) { (forecasts) in
+            
+            self.loadingActivityIndicatorView.stopAnimating()
+            self.tableView.isHidden = false
+            
             if let forecasts = forecasts {
                 self.forecasts = forecasts
                 self.tableView.reloadData()
             }
             else {
                 // show alert
+                let alert = UIAlertController.init(title: "Network Error", message: "There was a problem loading the weather for your current location", preferredStyle: .alert)
+                let alertAction = UIAlertAction(title: "OK", style: .destructive, handler: { (action) in
+                    self.dismiss(animated: true, completion: nil)
+                })
+                
+                // could add multiple of these
+                alert.addAction(alertAction)
+                
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }

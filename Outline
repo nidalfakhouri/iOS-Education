@@ -39,12 +39,12 @@ Course Outline:
 - Interface Builder and Storyboards
 - Doing things in code vs xibs
 - Labels, Buttons, Tables, Navigation, etc.
-- Autolayout
+- Autolayout - show constraints breaking
 
 - Common resources and websites
 - 3rd Party frameworks and Cocoapods (https://cocoapods.org).
 
 - Networking Options, system frameworks vs. AlamoFire
-- Public web service APIs and consuming JSON with Swift
+- Public web service APIs and consuming JSON with Swift (https://home.openweathermap.org/users/sign_up)
 - Design Patterns in Swift
 - Integrating Data with the UI Classes (Building a real app)

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherForecastViewController" customModule="iOS_Education" customModuleProvider="target">
             <connections>
+                <outlet property="loadingActivityIndicatorView" destination="iiK-Z4-9uP" id="dgf-tW-wS3"/>
                 <outlet property="tableView" destination="2TI-In-a5j" id="2L2-WH-qnZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,18 +22,28 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2TI-In-a5j">
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2TI-In-a5j">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="ytJ-v0-p6h"/>
                         <outlet property="delegate" destination="-1" id="Vwm-g3-NMM"/>
                         <outlet property="prefetchDataSource" destination="-1" id="JPw-FY-Q0k"/>
                     </connections>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="iiK-Z4-9uP">
+                    <rect key="frame" x="177" y="291" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="70e-W8-O3i"/>
+                        <constraint firstAttribute="height" constant="20" id="Qjo-eC-cVa"/>
+                    </constraints>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="iiK-Z4-9uP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1y2-Gn-cQC"/>
+                <constraint firstItem="iiK-Z4-9uP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FKO-bh-tQc"/>
                 <constraint firstItem="2TI-In-a5j" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SSv-ea-eSC"/>
                 <constraint firstItem="2TI-In-a5j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZHR-c1-6U6"/>
                 <constraint firstItem="2TI-In-a5j" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="zN1-2S-kYa"/>

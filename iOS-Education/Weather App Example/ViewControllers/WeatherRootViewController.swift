@@ -16,6 +16,7 @@ class WeatherRootViewController: UIViewController {
     @IBOutlet weak var sunriseSunsetLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var loadingActivityIndicatorView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +41,10 @@ class WeatherRootViewController: UIViewController {
             cityDescriptionLabel.text = name + " " + String(format: "%2.f˚", temperatureInFahrenheit) + " " + weatherDescription
         }
         
-        if let url = weatherData.iconURL {
-            if let data = try? Data(contentsOf: url) {
-                iconImageView.image = UIImage(data: data)
+        // UIKit is not thread safe and all operation must happen on the main thread
+        weatherData.loadIcon { (image) in
+            DispatchQueue.main.async {
+                self.iconImageView.image = image
             }
         }
         
@@ -83,11 +85,20 @@ extension WeatherRootViewController: CurrentLocationManagerDelegate {
     func didUpdateLocation(location: CLLocation) {
         WeatherDataManager.shared.getWeatherFor(coordinate: location.coordinate) { (weather) in
             
+            self.loadingActivityIndicatorView.stopAnimating()
+            
             if let weatherData = weather {
                 self.updateUIWith(weatherData)
             }
             else {
                 // show error
+                let alert = UIAlertController.init(title: "Network Error", message: "There was a problem loading the weather for your current location", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { (action) in
+                    self.dismiss(animated: true, completion: nil)
+                }))
+                
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }
