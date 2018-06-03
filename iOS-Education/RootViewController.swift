@@ -59,7 +59,7 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
         }
         else if indexPath.row == 5 {
             cell.textLabel?.text = "Collection Views"
-            cell.accessoryType = .disclosureIndicator
+            cell.accessoryType = .checkmark
         }
         else if indexPath.row == 6 {
             cell.textLabel?.text = "Autolayout"
@@ -79,7 +79,7 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
         }
         else if indexPath.row == 10 {
             cell.textLabel?.text = "Weather App"
-            cell.accessoryType = .disclosureIndicator
+            cell.accessoryType = .checkmark
         }
         
         return cell
