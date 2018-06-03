@@ -60,6 +60,7 @@ class WeatherData {
     public var sunset: Date?
     public var date: Date?
     public var iconCode: String?
+    fileprivate var icon: UIImage?
     
     public convenience init(name: String?, json: JSON) {
         self.init(json: json)
@@ -124,10 +125,17 @@ class WeatherData {
     }
     
     public func loadIcon(completion: @escaping (UIImage?)->()) {
-        DispatchQueue.global().async {
-            if let url = self.iconURL, let data = try? Data(contentsOf: url) {
-                let image = UIImage(data: data)
-                completion(image)
+        
+        if let image = self.icon {
+            completion(image)
+        }
+        else {
+            DispatchQueue.global().async {
+                if let url = self.iconURL, let data = try? Data(contentsOf: url) {
+                    let image = UIImage(data: data)
+                    self.icon = image
+                    completion(image)
+                }
             }
         }
     }
