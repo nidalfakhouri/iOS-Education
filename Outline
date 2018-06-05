@@ -29,7 +29,7 @@ Course Outline:
 
 - Xcode and Project Environments
 - Keyboard shortcuts, Command+Click, Command+Shift+O, Command+Option+Shift+Click for multiple windows, Control+Click+Drag for xib outlet hookup
-- Debugging in Xcode
+- Debugging in Xcode, exploding the UI to see the view heirarchy
 - Do something that creates a crash
 
 - iOS Frameworks: Foundation and UIKit
