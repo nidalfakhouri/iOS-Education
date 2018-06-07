@@ -25,7 +25,7 @@ https://cocoapods.org
 Course Outline:
 
 - Swift Basics with Playgrounds:
-- Swift Keywords, Default Types, Strings, Numbers, etc, Collections, Classes, Protocols, enums, Optionals, Variables, Functions, Completion Blocks, Control Flow, User Defined Types, Dispatch Queues (swift threading), etc.
+- Swift Keywords, Default Types, Strings, Numbers, etc, Collections, Classes, Protocols, enums, Optionals, Variables, Functions, Completion Blocks, Control Flow, User Defined Types, Dispatch Queues (swift threading), Memory Management, etc.
 
 - Xcode and Project Environments
 - Keyboard shortcuts, Command+Click, Command+Shift+O, Command+Option+Shift+Click for multiple windows, Control+Click+Drag for xib outlet hookup

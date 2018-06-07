@@ -39,6 +39,9 @@ import UIKit
  A point in a 3D coordinate system, perhaps encapsulating x, y and z properties, each of type Double.
  */
 
+// Developing iOS 11 Apps with Swift: 3. Swift Programming Language - 1:15:44 (memory management)
+// value types vs refrence types: https://developer.apple.com/swift/blog/?id=10
+
 struct Point {
     let x: Double
     let y: Double

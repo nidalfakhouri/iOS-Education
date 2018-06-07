@@ -4,6 +4,8 @@ import UIKit
 // https://docs.swift.org/swift-book/LanguageGuide/Closures.html
 // https://code.tutsplus.com/tutorials/swift-from-scratch-closures--cms-23138
 
+// Developing iOS 11 Apps with Swift: 4. More Swift - 1:07:03
+
 // closures are commonly refered to as completion blocks
 let completion1: ()->() = {
     print("we called a closure!")
