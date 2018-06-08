@@ -24,6 +24,11 @@ extension Informable {
     }
 }
 
+// just as an example protocols can have inheritance
+protocol MoreInformable: Informable {
+    var date: Date? { get set }
+}
+
 // notice how subclassing and conforming to protocols looks the same
 struct SomeStruct: Informable {
     
@@ -37,7 +42,9 @@ struct SomeStruct: Informable {
 }
 
 // if you were to subclass and conform it would look like this:
-class SomeObject: NSObject, Informable {
+class SomeObject: NSObject, MoreInformable {
+    
+    var date: Date? = Date() // current date
     
     var string: String? = nil
     
