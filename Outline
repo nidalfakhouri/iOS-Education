@@ -35,6 +35,7 @@ Course Outline:
 - iOS Frameworks: Foundation and UIKit
 - The AppDelegate
 - ViewControllers and Views
+- Navigation and Tab bar controllers
 - Show basic full screen constraints early
 - Interface Builder and Storyboards
 - Doing things in code vs xibs
@@ -48,3 +49,57 @@ Course Outline:
 - Public web service APIs and consuming JSON with Swift (https://home.openweathermap.org/users/sign_up)
 - Design Patterns in Swift
 - Integrating Data with the UI Classes (Building a real app)
+
+
+========================================================================================================================
+========================================================================================================================
+========================================================================================================================
+
+Day 1:
+
+- Introductions
+- Overview
+- Brief history of OSX and iOS and Objective-C and Swift
+- Xcode
+- Playground now, iOS project later (if the playground is causing us issues, we might have to switch)
+- Just start typing and the output will generate
+- Strings
+- Mutability
+- Optionals?, yes!
+- Numbers (as structs)
+- Primitive types in swift, where the heck are they?
+- Functions
+...
+- Closures
+- Assignment 1
+
+- iOS
+- View Controllers
+- The view hierarchy
+- Interface builder, xibs and storyboards
+- Views
+- Button and Labels
+- Outlets and actions
+- Assignment 2
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Day 2:
+
+- Continue Assignment 2
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Assignment 1: Basic Swift Overview
+- Use the "Person" object we created before
+- Create A "Tranactional" protocol that has a withdraw and deposit functions that both take a Double as a parameter and returns nothing.
+- Create A "AccountType" enum for checking, savings, trust, personalLoan, etc.
+- Create A "BankAccount" object with a balance or type Double, an instance of "AccountType", an instance of "Person", and conforms to the "Tranactional" protocol, give it an initalizer and a computed var "description"
+- Use an array of doubles to store the tranaction history, simply capturing the value passed into it as a double, then calulate the largest deposit made.
+- Test it by adding and removing value from the account
+
+Assignment 2: Tap Counter
+-
+
+Assignment 3: Weather app
+- Register for api key: https://openweathermap.org/appid#use*

@@ -45,6 +45,9 @@ var isEnabled = true
 isEnabled = false
 
 
+// on primitive types, or the lack thereof in swift:
+// https://stackoverflow.com/questions/36822136/are-int-string-etc-considered-to-be-primitives-in-swift
+
 // Numbers
 let a = Int(10)
 let b = 10
