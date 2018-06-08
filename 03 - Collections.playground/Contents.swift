@@ -9,6 +9,9 @@ array.append("nidal")
 array.append("john")
 array.append("jane")
 
+// arrays can also be initalized like this, called an array literal
+array3 = ["nidal", "john", "jane"]
+
 print("------------------")
 // Loop option 1
 for i in 0..<array.count {
@@ -70,6 +73,9 @@ var dictionary = [String : String]()
 var dictionary2 = Dictionary<String, String>()
 dictionary["firstName"] = "nidal"
 dictionary["lastName"] = "fakhouri"
+
+// this is a dictionary literal
+var dictionary3 = ["firstName" : "nidal", "lastName" : "fakhouri"]
 
 print("------------------")
 
