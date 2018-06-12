@@ -90,16 +90,18 @@ Day 2:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Assignment 1: Basic Swift Overview
+Assignments:
+
+1: Basic Swift Overview
 - Use the "Person" object we created before
-- Create A "Tranactional" protocol that has a withdraw and deposit functions that both take a Double as a parameter and returns nothing.
+- Create A "Tranactional" protocol that has a withdraw and deposit functions. Withdraw takes a double and returns a bool if the account has sufficent funds, the deposit takes a Double as a parameter and returns nothing.
 - Create A "AccountType" enum for checking, savings, trust, personalLoan, etc.
 - Create A "BankAccount" object with a balance or type Double, an instance of "AccountType", an instance of "Person", and conforms to the "Tranactional" protocol, give it an initalizer and a computed var "description"
 - Use an array of doubles to store the tranaction history, simply capturing the value passed into it as a double, then calulate the largest deposit made.
 - Test it by adding and removing value from the account
 
-Assignment 2: Tap Counter
--
+2: Tap Counter
+- 
 
-Assignment 3: Weather app
-- Register for api key: https://openweathermap.org/appid#use*
+3: Weather app
+- Register for api key: https://home.openweathermap.org/users/sign_up

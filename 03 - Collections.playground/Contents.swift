@@ -10,7 +10,7 @@ array.append("john")
 array.append("jane")
 
 // arrays can also be initalized like this, called an array literal
-array3 = ["nidal", "john", "jane"]
+var array3 = ["nidal", "john", "jane"]
 
 print("------------------")
 // Loop option 1

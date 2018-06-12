@@ -1,5 +1,5 @@
 
-import UIKit
+import Foundation
 
 // static vs mutable values
 let staticString = "static string"
