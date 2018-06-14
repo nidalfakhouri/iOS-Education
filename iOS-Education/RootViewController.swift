@@ -8,6 +8,21 @@
 
 import UIKit
 
+enum SwiftExample: Int {
+    case views = 0
+    case buttonsAndLabels
+    case timer
+    case scrollView
+    case tableViewSimple
+    case tableViewCustom
+    case collectionView
+    case autolayout
+    case currentLocation
+    case urlSession
+    case alamofire
+    case weatherApp
+}
+
 class RootViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -37,47 +52,55 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell: UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
-        if indexPath.row == 0 {
+        guard let swiftExample = SwiftExample(rawValue: indexPath.row) else {
+            return cell
+        }
+
+        if swiftExample == .views {
             cell.textLabel?.text = "Views"
             cell.accessoryType = .checkmark
         }
-        else if indexPath.row == 1 {
+        else if swiftExample == .buttonsAndLabels {
             cell.textLabel?.text = "Buttons And Labels"
             cell.accessoryType = .checkmark
         }
-        else if indexPath.row == 2 {
+        else if swiftExample == .timer {
+            cell.textLabel?.text = "Timer"
+            cell.accessoryType = .checkmark
+        }
+        else if swiftExample == .scrollView {
             cell.textLabel?.text = "Scroll Views"
             cell.accessoryType = .checkmark
         }
-        else if indexPath.row == 3 {
+        else if swiftExample == .tableViewSimple {
             cell.textLabel?.text = "Table Views"
             cell.accessoryType = .checkmark
         }
-        else if indexPath.row == 4 {
+        else if swiftExample == .tableViewCustom {
             cell.textLabel?.text = "Table Views Custom Cell"
             cell.accessoryType = .checkmark
         }
-        else if indexPath.row == 5 {
+        else if swiftExample == .collectionView {
             cell.textLabel?.text = "Collection Views"
             cell.accessoryType = .checkmark
         }
-        else if indexPath.row == 6 {
+        else if swiftExample == .autolayout {
             cell.textLabel?.text = "Autolayout"
             cell.accessoryType = .disclosureIndicator
         }
-        else if indexPath.row == 7 {
+        else if swiftExample == .currentLocation {
             cell.textLabel?.text = "Current Location"
             cell.accessoryType = .checkmark
         }
-        else if indexPath.row == 8 {
+        else if swiftExample == .urlSession {
             cell.textLabel?.text = "Networking With NSURLSession"
             cell.accessoryType = .checkmark
         }
-        else if indexPath.row == 9 {
+        else if swiftExample == .alamofire {
             cell.textLabel?.text = "Networking With Alamofire"
             cell.accessoryType = .checkmark
         }
-        else if indexPath.row == 10 {
+        else if swiftExample == .weatherApp {
             cell.textLabel?.text = "Weather App"
             cell.accessoryType = .checkmark
         }
@@ -89,37 +112,44 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
         
         var viewController: UIViewController? = nil
         
-        if indexPath.row == 0 {
+        guard let swiftExample = SwiftExample(rawValue: indexPath.row) else {
+            return
+        }
+        
+        if swiftExample == .views {
             viewController = ViewExampleViewController(nibName: "ViewExampleViewController", bundle: nil)
         }
-        else if indexPath.row == 1 {
+        else if swiftExample == .buttonsAndLabels {
             viewController = ButtonsAndLabelsExampleViewController(nibName: "ButtonsAndLabelsExampleViewController", bundle: nil)
         }
-        else if indexPath.row == 2 {
+        else if swiftExample == .timer {
+            viewController = TimerViewController(nibName: "TimerViewController", bundle: nil)
+        }
+        else if swiftExample == .scrollView {
             viewController = ScrollViewExampleViewController(nibName: "ScrollViewExampleViewController", bundle: nil)
         }
-        else if indexPath.row == 3 {
+        else if swiftExample == .tableViewSimple {
             viewController = SimpleTableViewExampleViewController(nibName: "SimpleTableViewExampleViewController", bundle: nil)
         }
-        else if indexPath.row == 4 {
+        else if swiftExample == .tableViewCustom {
             viewController = CustomTableViewExampleViewController(nibName: "CustomTableViewExampleViewController", bundle: nil)
         }
-        else if indexPath.row == 5 {
+        else if swiftExample == .collectionView {
             viewController = CollectionViewExampleViewController(nibName: "CollectionViewExampleViewController", bundle: nil)
         }
-        else if indexPath.row == 6 {
+        else if swiftExample == .autolayout {
             viewController = AutoLayoutExampleViewController(nibName: "AutoLayoutExampleViewController", bundle: nil)
         }
-        else if indexPath.row == 7 {
+        else if swiftExample == .currentLocation {
             viewController = CurrentLocationExampleViewController(nibName: "CurrentLocationExampleViewController", bundle: nil)
         }
-        else if indexPath.row == 8 {
+        else if swiftExample == .urlSession {
             viewController = NSURLSessionExampleViewController(nibName: "NSURLSessionExampleViewController", bundle: nil)
         }
-        else if indexPath.row == 9 {
+        else if swiftExample == .alamofire {
             viewController = AlamofireNetworkingExampleViewController(nibName: "AlamofireNetworkingExampleViewController", bundle: nil)
         }
-        else if indexPath.row == 10 {
+        else if swiftExample == .weatherApp {
             viewController = WeatherRootViewController(nibName: "WeatherRootViewController", bundle: nil)
         }
         

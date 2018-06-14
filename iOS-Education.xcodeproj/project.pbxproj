@@ -46,6 +46,8 @@
 		74D985FC20A38E6D004C237B /* ViewExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74D985FA20A38E6D004C237B /* ViewExampleViewController.xib */; };
 		74D9860320A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9860120A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift */; };
 		74D9860420A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74D9860220A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib */; };
+		74E2D63C20D202460059BB32 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2D63A20D202460059BB32 /* TimerViewController.swift */; };
+		74E2D63D20D202460059BB32 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E2D63B20D202460059BB32 /* TimerViewController.xib */; };
 		74E9D9C820AD144000763C77 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9D9C720AD144000763C77 /* Person.swift */; };
 		74F82BA320C1DA840026EC3E /* WeatherForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F82BA120C1DA840026EC3E /* WeatherForecastViewController.swift */; };
 		74F82BA420C1DA840026EC3E /* WeatherForecastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F82BA220C1DA840026EC3E /* WeatherForecastViewController.xib */; };
@@ -109,6 +111,8 @@
 		74D985FA20A38E6D004C237B /* ViewExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewExampleViewController.xib; sourceTree = "<group>"; };
 		74D9860120A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsAndLabelsExampleViewController.swift; sourceTree = "<group>"; };
 		74D9860220A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonsAndLabelsExampleViewController.xib; sourceTree = "<group>"; };
+		74E2D63A20D202460059BB32 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		74E2D63B20D202460059BB32 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
 		74E9D9C720AD144000763C77 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		74F82BA120C1DA840026EC3E /* WeatherForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewController.swift; sourceTree = "<group>"; };
 		74F82BA220C1DA840026EC3E /* WeatherForecastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherForecastViewController.xib; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 				74CDAF0A2089385C006F7548 /* RootViewController.swift */,
 				74D985F820A38E36004C237B /* Views */,
 				74D985FD20A3969F004C237B /* Buttons And Labels */,
+				74E2D63920D202260059BB32 /* Timer */,
 				74D985FE20A396B2004C237B /* Scroll Views */,
 				74D985FF20A396BF004C237B /* TableViews */,
 				74D9860020A396D0004C237B /* CollectionViews */,
@@ -294,6 +299,15 @@
 				7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */,
 			);
 			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		74E2D63920D202260059BB32 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				74E2D63A20D202460059BB32 /* TimerViewController.swift */,
+				74E2D63B20D202460059BB32 /* TimerViewController.xib */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		74F82BA920C219E50026EC3E /* Models */ = {
@@ -415,6 +429,7 @@
 				7468A22F20AE4AB9004A08AA /* LARGE_elevation.jpg in Resources */,
 				740CF2C220C22B2D0026DE63 /* WeatherDataTableViewCell.xib in Resources */,
 				7423AE0320AA20B800E414EB /* CustomTableViewExampleViewController.xib in Resources */,
+				74E2D63D20D202460059BB32 /* TimerViewController.xib in Resources */,
 				7423ADFF20AA209600E414EB /* ScrollViewExampleViewController.xib in Resources */,
 				74CDAF132089385D006F7548 /* LaunchScreen.storyboard in Resources */,
 				7423AE2920AA54DC00E414EB /* CustomTableViewCell.xib in Resources */,
@@ -506,6 +521,7 @@
 				7423AE1D20AA291C00E414EB /* AutoLayoutExampleViewController.swift in Sources */,
 				74BD844520B3BC3600C25AF2 /* WeatherData.swift in Sources */,
 				74F82BA620C1DBB70026EC3E /* CurrentLocationManager.swift in Sources */,
+				74E2D63C20D202460059BB32 /* TimerViewController.swift in Sources */,
 				7423AE0A20AA21A800E414EB /* CollectionViewExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
