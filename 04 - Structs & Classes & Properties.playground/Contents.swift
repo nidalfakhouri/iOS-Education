@@ -80,20 +80,6 @@ class Account: NSObject {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // extensions! in objective c it used to be catagories, its a way to add functionality to a class without subclassing
 // all swift data types can have extensions, extensions are availible to all instances of the type
 // we can have extensions from user defined types
@@ -106,7 +92,7 @@ extension Person {
     }
     
     // extensions can also add initalizers!
-    // init? means it might return nil, its called a filable initalizer
+    // init? means it might return nil, its called a failable initalizer
     convenience init?(fullName: String) {
         let stringParts = fullName.components(separatedBy: " ")
         if stringParts.count == 2 {

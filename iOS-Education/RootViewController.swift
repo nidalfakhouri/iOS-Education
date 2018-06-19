@@ -58,52 +58,42 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
 
         if swiftExample == .views {
             cell.textLabel?.text = "Views"
-            cell.accessoryType = .checkmark
         }
         else if swiftExample == .buttonsAndLabels {
             cell.textLabel?.text = "Buttons And Labels"
-            cell.accessoryType = .checkmark
         }
         else if swiftExample == .timer {
             cell.textLabel?.text = "Timer"
-            cell.accessoryType = .checkmark
         }
         else if swiftExample == .scrollView {
             cell.textLabel?.text = "Scroll Views"
-            cell.accessoryType = .checkmark
         }
         else if swiftExample == .tableViewSimple {
             cell.textLabel?.text = "Table Views"
-            cell.accessoryType = .checkmark
         }
         else if swiftExample == .tableViewCustom {
             cell.textLabel?.text = "Table Views Custom Cell"
-            cell.accessoryType = .checkmark
         }
         else if swiftExample == .collectionView {
             cell.textLabel?.text = "Collection Views"
-            cell.accessoryType = .checkmark
         }
         else if swiftExample == .autolayout {
             cell.textLabel?.text = "Autolayout"
-            cell.accessoryType = .disclosureIndicator
         }
         else if swiftExample == .currentLocation {
             cell.textLabel?.text = "Current Location"
-            cell.accessoryType = .checkmark
         }
         else if swiftExample == .urlSession {
             cell.textLabel?.text = "Networking With NSURLSession"
-            cell.accessoryType = .checkmark
         }
         else if swiftExample == .alamofire {
             cell.textLabel?.text = "Networking With Alamofire"
-            cell.accessoryType = .checkmark
         }
         else if swiftExample == .weatherApp {
             cell.textLabel?.text = "Weather App"
-            cell.accessoryType = .checkmark
         }
+        
+        cell.accessoryType = .disclosureIndicator
         
         return cell
     }

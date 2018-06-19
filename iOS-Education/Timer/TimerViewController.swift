@@ -33,6 +33,17 @@ class TimerViewController: UIViewController {
         
         if seconds == 10 {
             timer.invalidate() // stops timer
+            
+            // show alert
+            let alert = UIAlertController.init(title: "Timers Done", message: nil, preferredStyle: .alert)
+            
+            // can have many actions, here we just have one
+            alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { (action) in
+                // closure for button action
+                self.dismiss(animated: true, completion: nil)
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
         }
     }
 }

@@ -79,6 +79,7 @@ Day 1:
 - Interface builder, xibs and storyboards
 - Views
 - Button and Labels
+- Autolayout intro
 - Outlets and actions
 - Assignment 2
 
@@ -87,6 +88,18 @@ Day 1:
 Day 2:
 
 - Continue Assignment 2
+- TableViews
+- TableViews Custom Cells
+- Collection Views
+- Autolayout more (breaking constraints)
+- Current Location
+
+- Network Options
+- Cocoapods
+- JSON parsing
+- Model Object creation
+- Singletons
+- Model View Controller
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -101,7 +114,12 @@ Assignments:
 - Test it by adding and removing value from the account
 
 2: Tap Counter
-- 
+- Use the Timer example as the starter
+- create 2 buttons and 2 labels with outlets and actions
+- there will be a start / tap button, a reset button, a time label, and a score label
+- the user should be allowed to tap as long as the timer is counting down
+- once it has counted down the app will show an alert with the score
+
 
 3: Weather app
 - Register for api key: https://home.openweathermap.org/users/sign_up

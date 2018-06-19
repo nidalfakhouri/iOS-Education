@@ -69,7 +69,7 @@ if let nonOptionalArray = optionalArray {
 print("------------------")
 
 // Dictionaries
-var dictionary = [String : String]()
+var dictionary = [String : String]() //[key type : value type]
 var dictionary2 = Dictionary<String, String>()
 dictionary["firstName"] = "nidal"
 dictionary["lastName"] = "fakhouri"
