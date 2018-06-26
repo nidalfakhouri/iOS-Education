@@ -34,8 +34,6 @@
 		7423AE2C20AA54F400E414EB /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE2A20AA54F400E414EB /* CustomCollectionViewCell.swift */; };
 		7423AE2D20AA54F400E414EB /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */; };
 		7468A22F20AE4AB9004A08AA /* LARGE_elevation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7468A22E20AE4AB9004A08AA /* LARGE_elevation.jpg */; };
-		747EB18D20CF5B6E00016B2D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747EB18C20CF5B6E00016B2D /* main.swift */; };
-		747EB19220CF5B8300016B2D /* 01 - Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747EB19120CF5B8300016B2D /* 01 - Basics.swift */; };
 		74BD844520B3BC3600C25AF2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BD844420B3BC3600C25AF2 /* WeatherData.swift */; };
 		74CDAF092089385C006F7548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF082089385C006F7548 /* AppDelegate.swift */; };
 		74CDAF0B2089385C006F7548 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF0A2089385C006F7548 /* RootViewController.swift */; };
@@ -53,18 +51,6 @@
 		74F82BA420C1DA840026EC3E /* WeatherForecastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F82BA220C1DA840026EC3E /* WeatherForecastViewController.xib */; };
 		74F82BA620C1DBB70026EC3E /* CurrentLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F82BA520C1DBB70026EC3E /* CurrentLocationManager.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		747EB18820CF5B6E00016B2D /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		047CA7EA1EA1D084E358BC65 /* Pods-iOS-Education.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Education.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Education/Pods-iOS-Education.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,9 +81,6 @@
 		7423AE2A20AA54F400E414EB /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		7468A22E20AE4AB9004A08AA /* LARGE_elevation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LARGE_elevation.jpg; sourceTree = "<group>"; };
-		747EB18A20CF5B6E00016B2D /* SwiftBasics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftBasics; sourceTree = BUILT_PRODUCTS_DIR; };
-		747EB18C20CF5B6E00016B2D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		747EB19120CF5B8300016B2D /* 01 - Basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01 - Basics.swift"; sourceTree = "<group>"; };
 		747EB19320CF5C1100016B2D /* Outline */ = {isa = PBXFileReference; lastKnownFileType = text; path = Outline; sourceTree = "<group>"; };
 		74BD844420B3BC3600C25AF2 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		74CDAF052089385C006F7548 /* iOS-Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,13 +104,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		747EB18720CF5B6E00016B2D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		74CDAF022089385C006F7548 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,21 +171,11 @@
 			path = "Weather App Example";
 			sourceTree = "<group>";
 		};
-		747EB18B20CF5B6E00016B2D /* SwiftBasics */ = {
-			isa = PBXGroup;
-			children = (
-				747EB18C20CF5B6E00016B2D /* main.swift */,
-				747EB19120CF5B8300016B2D /* 01 - Basics.swift */,
-			);
-			path = SwiftBasics;
-			sourceTree = "<group>";
-		};
 		74CDAEFC2089385B006F7548 = {
 			isa = PBXGroup;
 			children = (
 				747EB19320CF5C1100016B2D /* Outline */,
 				74CDAF072089385C006F7548 /* iOS-Education */,
-				747EB18B20CF5B6E00016B2D /* SwiftBasics */,
 				74CDAF062089385C006F7548 /* Products */,
 				53FF31D428FA6F6FC8E749B3 /* Pods */,
 				4F55D42B1E51BDEA0209BE5A /* Frameworks */,
@@ -220,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				74CDAF052089385C006F7548 /* iOS-Education.app */,
-				747EB18A20CF5B6E00016B2D /* SwiftBasics */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -343,23 +308,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		747EB18920CF5B6E00016B2D /* SwiftBasics */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 747EB18E20CF5B6E00016B2D /* Build configuration list for PBXNativeTarget "SwiftBasics" */;
-			buildPhases = (
-				747EB18620CF5B6E00016B2D /* Sources */,
-				747EB18720CF5B6E00016B2D /* Frameworks */,
-				747EB18820CF5B6E00016B2D /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftBasics;
-			productName = SwiftBasics;
-			productReference = 747EB18A20CF5B6E00016B2D /* SwiftBasics */;
-			productType = "com.apple.product-type.tool";
-		};
 		74CDAF042089385C006F7548 /* iOS-Education */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74CDAF172089385D006F7548 /* Build configuration list for PBXNativeTarget "iOS-Education" */;
@@ -389,9 +337,6 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Nidal Fakhouri";
 				TargetAttributes = {
-					747EB18920CF5B6E00016B2D = {
-						CreatedOnToolsVersion = 9.3;
-					};
 					74CDAF042089385C006F7548 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -411,7 +356,6 @@
 			projectRoot = "";
 			targets = (
 				74CDAF042089385C006F7548 /* iOS-Education */,
-				747EB18920CF5B6E00016B2D /* SwiftBasics */,
 			);
 		};
 /* End PBXProject section */
@@ -488,15 +432,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		747EB18620CF5B6E00016B2D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				747EB18D20CF5B6E00016B2D /* main.swift in Sources */,
-				747EB19220CF5B8300016B2D /* 01 - Basics.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		74CDAF012089385C006F7548 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,32 +483,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		747EB18F20CF5B6E00016B2D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QJ97J85B68;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		747EB19020CF5B6E00016B2D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QJ97J85B68;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 		74CDAF152089385D006F7548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -729,15 +638,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		747EB18E20CF5B6E00016B2D /* Build configuration list for PBXNativeTarget "SwiftBasics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				747EB18F20CF5B6E00016B2D /* Debug */,
-				747EB19020CF5B6E00016B2D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		74CDAF002089385B006F7548 /* Build configuration list for PBXProject "iOS-Education" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

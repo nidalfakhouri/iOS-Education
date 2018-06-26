@@ -81,6 +81,7 @@ Day 1:
 - Button and Labels
 - Autolayout intro
 - Outlets and actions
+- Timer
 - Assignment 2
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,6 +89,7 @@ Day 1:
 Day 2:
 
 - Continue Assignment 2
+- Intro to scroll views
 - TableViews
 - TableViews Custom Cells
 - Collection Views

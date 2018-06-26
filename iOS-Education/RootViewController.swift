@@ -37,7 +37,7 @@ class RootViewController: UIViewController {
 extension RootViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 11
+        return SwiftExample.weatherApp.rawValue + 1
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

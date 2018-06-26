@@ -31,7 +31,7 @@ let completion3: (Int, Int)->(Bool) = { a, b in
 let x = completion3(10, 7)
 
 
-// giving a closure a type name, no its pretty much a type you can use as any other type
+// giving a closure a type name, now its pretty much a type you can use as any other type
 typealias NumberComparisonCompletionBlock = (Int, Int)->(Bool)
 
 let isAGreaterThanB: NumberComparisonCompletionBlock = { a, b in
