@@ -49,6 +49,8 @@ class WeatherDataManager {
                 let forecasts = forecatJSON["list"]
                 var forecastsArray = [WeatherData]()
                 for json in forecasts {
+                    // json is of type (String, JSON) which is a tuple, to say json.0 would give you type String and json.1 gives type JSON
+                    // https://medium.com/@abhimuralidharan/tuple-in-swift-a9ddeb314c79
                     let weather = WeatherData(name: name, json: json.1)
                     forecastsArray.append(weather)
                 }
