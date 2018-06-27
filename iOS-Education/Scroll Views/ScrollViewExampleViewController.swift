@@ -26,13 +26,13 @@ class ScrollViewExampleViewController: UIViewController {
             let imageSize = image.size
             let minSize = screenSize.width / imageSize.width
             
-            self.imageScrollView.contentSize =  CGSize(width: imageView.frame.size.width, height: imageView.frame.size.height)
-            self.imageScrollView.maximumZoomScale = 4.0
-            self.imageScrollView.minimumZoomScale = minSize
-            self.imageScrollView.clipsToBounds = true
-            self.imageScrollView.delegate = self
-            self.imageScrollView.addSubview(imageView)
-            //self.imageScrollView.zoomScale = minSize
+            imageScrollView.contentSize =  CGSize(width: imageView.frame.size.width, height: imageView.frame.size.height)
+            imageScrollView.maximumZoomScale = 4.0
+            imageScrollView.minimumZoomScale = minSize
+            imageScrollView.clipsToBounds = true
+            imageScrollView.delegate = self
+            imageScrollView.addSubview(imageView)
+            //imageScrollView.zoomScale = minSize
             //centerImageInScrollView()
         }
     }

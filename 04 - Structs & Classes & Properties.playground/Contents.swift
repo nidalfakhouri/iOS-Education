@@ -59,6 +59,9 @@ public class Person {
     private let age: Int?
     
     init(firstName: String, lastName: String, age: Int? = nil) {
+        // use self. to be explicit in refering to the class property
+        // use self. in an initalizer when create class properties for the first time
+        // http://thebugcode.github.io/when-to-self-in-swift-and-when-not-to-2/
         self.firstName = firstName
         self.lastName = lastName
         self.age = age
