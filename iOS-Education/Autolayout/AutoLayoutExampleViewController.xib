@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,14 +19,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYP-qf-lk1">
-                    <rect key="frame" x="16" y="20" width="382" height="128"/>
+                    <rect key="frame" x="16" y="0.0" width="382" height="128"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="TLs-yB-aN4"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6VK-Da-beT">
-                    <rect key="frame" x="16" y="156" width="150" height="150"/>
+                    <rect key="frame" x="16" y="136" width="150" height="150"/>
                     <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="DfN-lK-wvn"/>
@@ -36,7 +34,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OzA-ue-6aP">
-                    <rect key="frame" x="174" y="173" width="224" height="100"/>
+                    <rect key="frame" x="174" y="153" width="224" height="100"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ds-9u-vsT">
                             <rect key="frame" x="99.666666666666686" y="37.666666666666657" width="25" height="25"/>
@@ -55,7 +53,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9RI-tC-1qM">
-                    <rect key="frame" x="16" y="322" width="224" height="80"/>
+                    <rect key="frame" x="16" y="302" width="224" height="80"/>
                     <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="86r-SX-W2b"/>

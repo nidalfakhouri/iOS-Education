@@ -41,7 +41,7 @@ class NSURLSessionExampleViewController: UIViewController {
                 {
                     print(jsonDictionary)
                     if let main = jsonDictionary["main"] {
-                        print(main["temp"])
+                        print(main["temp"] as Any)
                     }
                 }
             }
