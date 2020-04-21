@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NSURLSessionExampleViewController: UIViewController {
+class URLSessionExampleViewController: UIViewController {
 
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?

@@ -84,7 +84,7 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = "Current Location"
         }
         else if swiftExample == .urlSession {
-            cell.textLabel?.text = "Networking With NSURLSession"
+            cell.textLabel?.text = "Networking With URLSession"
         }
         else if swiftExample == .alamofire {
             cell.textLabel?.text = "Networking With Alamofire"
@@ -134,7 +134,7 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
             viewController = CurrentLocationExampleViewController(nibName: "CurrentLocationExampleViewController", bundle: nil)
         }
         else if swiftExample == .urlSession {
-            viewController = NSURLSessionExampleViewController(nibName: "NSURLSessionExampleViewController", bundle: nil)
+            viewController = URLSessionExampleViewController(nibName: "URLSessionExampleViewController", bundle: nil)
         }
         else if swiftExample == .alamofire {
             viewController = AlamofireNetworkingExampleViewController(nibName: "AlamofireNetworkingExampleViewController", bundle: nil)

@@ -20,8 +20,8 @@
 		7423AE0B20AA21A800E414EB /* CollectionViewExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE0920AA21A800E414EB /* CollectionViewExampleViewController.xib */; };
 		7423AE1020AA243900E414EB /* CurrentLocationExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE0E20AA243900E414EB /* CurrentLocationExampleViewController.swift */; };
 		7423AE1120AA243900E414EB /* CurrentLocationExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE0F20AA243900E414EB /* CurrentLocationExampleViewController.xib */; };
-		7423AE1420AA244E00E414EB /* NSURLSessionExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE1220AA244E00E414EB /* NSURLSessionExampleViewController.swift */; };
-		7423AE1520AA244E00E414EB /* NSURLSessionExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE1320AA244E00E414EB /* NSURLSessionExampleViewController.xib */; };
+		7423AE1420AA244E00E414EB /* URLSessionExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE1220AA244E00E414EB /* URLSessionExampleViewController.swift */; };
+		7423AE1520AA244E00E414EB /* URLSessionExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE1320AA244E00E414EB /* URLSessionExampleViewController.xib */; };
 		7423AE1820AA246000E414EB /* AlamofireNetworkingExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE1620AA246000E414EB /* AlamofireNetworkingExampleViewController.swift */; };
 		7423AE1920AA246000E414EB /* AlamofireNetworkingExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE1720AA246000E414EB /* AlamofireNetworkingExampleViewController.xib */; };
 		7423AE1D20AA291C00E414EB /* AutoLayoutExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE1B20AA291C00E414EB /* AutoLayoutExampleViewController.swift */; };
@@ -67,8 +67,8 @@
 		7423AE0920AA21A800E414EB /* CollectionViewExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewExampleViewController.xib; sourceTree = "<group>"; };
 		7423AE0E20AA243900E414EB /* CurrentLocationExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationExampleViewController.swift; sourceTree = "<group>"; };
 		7423AE0F20AA243900E414EB /* CurrentLocationExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentLocationExampleViewController.xib; sourceTree = "<group>"; };
-		7423AE1220AA244E00E414EB /* NSURLSessionExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSURLSessionExampleViewController.swift; sourceTree = "<group>"; };
-		7423AE1320AA244E00E414EB /* NSURLSessionExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSURLSessionExampleViewController.xib; sourceTree = "<group>"; };
+		7423AE1220AA244E00E414EB /* URLSessionExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExampleViewController.swift; sourceTree = "<group>"; };
+		7423AE1320AA244E00E414EB /* URLSessionExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = URLSessionExampleViewController.xib; sourceTree = "<group>"; };
 		7423AE1620AA246000E414EB /* AlamofireNetworkingExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkingExampleViewController.swift; sourceTree = "<group>"; };
 		7423AE1720AA246000E414EB /* AlamofireNetworkingExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlamofireNetworkingExampleViewController.xib; sourceTree = "<group>"; };
 		7423AE1B20AA291C00E414EB /* AutoLayoutExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutExampleViewController.swift; sourceTree = "<group>"; };
@@ -135,8 +135,8 @@
 		7423AE0C20AA21F000E414EB /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				7423AE1220AA244E00E414EB /* NSURLSessionExampleViewController.swift */,
-				7423AE1320AA244E00E414EB /* NSURLSessionExampleViewController.xib */,
+				7423AE1220AA244E00E414EB /* URLSessionExampleViewController.swift */,
+				7423AE1320AA244E00E414EB /* URLSessionExampleViewController.xib */,
 				7423AE1620AA246000E414EB /* AlamofireNetworkingExampleViewController.swift */,
 				7423AE1720AA246000E414EB /* AlamofireNetworkingExampleViewController.xib */,
 			);
@@ -380,7 +380,7 @@
 				74F82BA420C1DA840026EC3E /* WeatherForecastViewController.xib in Resources */,
 				74D9860420A3970F004C237B /* ButtonsAndLabelsExampleViewController.xib in Resources */,
 				7423AE1920AA246000E414EB /* AlamofireNetworkingExampleViewController.xib in Resources */,
-				7423AE1520AA244E00E414EB /* NSURLSessionExampleViewController.xib in Resources */,
+				7423AE1520AA244E00E414EB /* URLSessionExampleViewController.xib in Resources */,
 				74CDAF102089385D006F7548 /* Assets.xcassets in Resources */,
 				74CDAF0E2089385C006F7548 /* Main.storyboard in Resources */,
 				7423AE2320AA2A1700E414EB /* WeatherRootViewController.xib in Resources */,
@@ -442,7 +442,7 @@
 				74D9860320A3970F004C237B /* ButtonsAndLabelsExampleViewController.swift in Sources */,
 				74CDAF092089385C006F7548 /* AppDelegate.swift in Sources */,
 				7423AE2820AA54DC00E414EB /* CustomTableViewCell.swift in Sources */,
-				7423AE1420AA244E00E414EB /* NSURLSessionExampleViewController.swift in Sources */,
+				7423AE1420AA244E00E414EB /* URLSessionExampleViewController.swift in Sources */,
 				7423AE0220AA20B800E414EB /* CustomTableViewExampleViewController.swift in Sources */,
 				7423AE2520AA2A6000E414EB /* WeatherDataManager.swift in Sources */,
 				7423AE1820AA246000E414EB /* AlamofireNetworkingExampleViewController.swift in Sources */,
