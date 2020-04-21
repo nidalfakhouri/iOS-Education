@@ -19,19 +19,25 @@ class ScrollViewExampleViewController: UIViewController {
         
         title = "Scroll Views"
         
-        if let image = UIImage(named: "LARGE_elevation.jpg") {
+        if let image = UIImage(named: "Earth_poster_large") {
             
             imageView = UIImageView(image: image)
             let screenSize = UIScreen.main.bounds.size
             let imageSize = image.size
             let minSize = screenSize.width / imageSize.width
             
-            imageScrollView.contentSize =  CGSize(width: imageView.frame.size.width, height: imageView.frame.size.height)
+            let width = imageView.frame.size.width
+            let height = imageView.frame.size.height
+            
+            imageScrollView.contentSize =  CGSize(width: width, height: height)
             imageScrollView.maximumZoomScale = 4.0
             imageScrollView.minimumZoomScale = minSize
             imageScrollView.clipsToBounds = true
             imageScrollView.delegate = self
             imageScrollView.addSubview(imageView)
+
+            imageScrollView.contentOffset = CGPoint(x: width / 2, y: height / 2)
+            
             //imageScrollView.zoomScale = minSize
             //centerImageInScrollView()
         }
