@@ -11,12 +11,18 @@ import UIKit
 class CollectionViewExampleViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var images: [UIImage] = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Collection View"
-        collectionView.register(UINib(nibName: "CustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CustomCollectionViewCell")
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        let nib = UINib(nibName: "CustomCollectionViewCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: "CustomCollectionViewCell")
         
         for i in 1...50 {
             let fileName = "trilobites-\(i).png"
