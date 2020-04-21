@@ -19,16 +19,18 @@ class AlamofireNetworkingExampleViewController: UIViewController {
         
         let urlString = "http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=\(WeatherDataManager.shared.APPID)"
         
-        Alamofire.request(urlString).responseJSON { (responseData) -> Void in
-            if let data = responseData.result.value {
-                let swiftyJsonVar = JSON(data)
-                print(swiftyJsonVar)
-                print("--------------------")
-        
-                let temp = swiftyJsonVar["main"]["temp"]
-                print(temp)
-                print("--------------------")
-            }
+        AF.request(urlString).responseJSON { (response) in
+            
+             if let data = response.data   {
+                 let swiftyJsonVar = JSON(data)
+                 print(swiftyJsonVar)
+                 print("--------------------")
+         
+                 let temp = swiftyJsonVar["main"]["temp"]
+                 print(temp)
+                 print("--------------------")
+             }
+             
         }
     }
 }

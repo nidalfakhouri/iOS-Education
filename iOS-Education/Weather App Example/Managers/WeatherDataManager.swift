@@ -24,8 +24,8 @@ class WeatherDataManager {
         
         let urlString = "http://api.openweathermap.org/data/2.5/weather?lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&APPID=\(WeatherDataManager.shared.APPID)"
         
-        Alamofire.request(urlString).responseJSON { (responseData) -> Void in
-            if let data = responseData.result.value {
+        AF.request(urlString).responseJSON { (response) in
+            if let data = response.data {
                 let weatherJSON = JSON(data)
                 let weather = WeatherData(json: weatherJSON)
                 completion(weather)
@@ -41,8 +41,8 @@ class WeatherDataManager {
         
         let urlString = "http://api.openweathermap.org/data/2.5/forecast?lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&APPID=\(WeatherDataManager.shared.APPID)"
         
-        Alamofire.request(urlString).responseJSON { (responseData) -> Void in
-            if let data = responseData.result.value {
+        AF.request(urlString).responseJSON { (response) in
+            if let data = response.data {
                 let forecatJSON = JSON(data)
                 let name = forecatJSON["city"]["name"].rawValue as? String
                 
