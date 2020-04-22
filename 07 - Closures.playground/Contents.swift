@@ -6,6 +6,22 @@ import UIKit
 
 // Developing iOS 11 Apps with Swift: 4. More Swift - 1:07:03
 
+/*
+ 
+ ()->()
+ left hand side is the parameters
+ right hand side is the return value
+ 
+ ()->(Bool)
+ no parameters, returns bool
+ 
+ (Bool)->()
+ bool parameter no return trype
+ 
+ (Bool)->(String)
+ bool parameter string return trype
+*/
+
 // closures are commonly refered to as completion blocks
 let completion1: ()->() = {
     print("we called a closure!")
@@ -13,6 +29,7 @@ let completion1: ()->() = {
 
 // call completion
 completion1()
+
 
 // closure with no parameters and a boolean return value
 let completion2: ()->(Bool) = {
@@ -85,20 +102,33 @@ var numbers = [8, 4, 10, 0, 6, 7, 22, 6, 4, 89, 235, 67, 12, 22]
  public func forEach(_ body: (Element) throws -> Void) rethrows
 */
 
+print("--------------")
+
+for i in 0..<numbers.count {
+    let number = numbers[i]
+    print(number)
+}
+
+print("--------------")
+
 numbers.forEach { (number) in
     print(number)
 }
 
 print("--------------")
 
-numbers.forEach({
+numbers.forEach {
     print($0)
-})
+}
 
 print("--------------")
 
 let sortedNumbers = numbers.sorted { (a, b) -> Bool in
     return a > b
+}
+
+let sortedNumbers2 = numbers.sorted {
+    return $0 > $1
 }
 
 sortedNumbers.forEach {

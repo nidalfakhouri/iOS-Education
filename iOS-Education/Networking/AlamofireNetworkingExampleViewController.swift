@@ -21,7 +21,7 @@ class AlamofireNetworkingExampleViewController: UIViewController {
         
         AF.request(urlString).responseJSON { (response) in
             
-             if let data = response.data   {
+             if let data = response.data {
                 
                 let swiftyJsonVar = JSON(data)
                 print(swiftyJsonVar)

@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E6C8D0F07E4EDC5521627D3 /* Pods_AnnieCannonsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B346817E3DF4C87530094A8E /* Pods_AnnieCannonsApp.framework */; };
+		7444C6E4244FC631008757CE /* WeatherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7444C6E3244FC631008757CE /* WeatherDataManager.swift */; };
+		7444C6E6244FCBCE008757CE /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7444C6E5244FCBCE008757CE /* CurrentWeatherData.swift */; };
 		74968AAF2449217B006DE012 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74968AAD2449217B006DE012 /* PersonTableViewCell.swift */; };
 		74968AB02449217B006DE012 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74968AAE2449217B006DE012 /* PersonTableViewCell.xib */; };
 		74DD1013244529BB00B9C4DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DD1012244529BB00B9C4DC /* AppDelegate.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B7CCBCBEBB00327770E0049 /* Pods-AnnieCannonsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnnieCannonsApp.release.xcconfig"; path = "Target Support Files/Pods-AnnieCannonsApp/Pods-AnnieCannonsApp.release.xcconfig"; sourceTree = "<group>"; };
+		7444C6E3244FC631008757CE /* WeatherDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataManager.swift; sourceTree = "<group>"; };
+		7444C6E5244FCBCE008757CE /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
 		74968AAD2449217B006DE012 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		74968AAE2449217B006DE012 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
 		74DD100F244529BB00B9C4DC /* AnnieCannonsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnnieCannonsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +44,8 @@
 		74DD102A244530D100B9C4DC /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 		74DD102B244530D100B9C4DC /* PersonListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonListViewController.xib; sourceTree = "<group>"; };
 		74DD102E24453FB900B9C4DC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		988F7793066839644F2B8F79 /* Pods-AnnieCannonsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnnieCannonsApp.debug.xcconfig"; path = "Target Support Files/Pods-AnnieCannonsApp/Pods-AnnieCannonsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B346817E3DF4C87530094A8E /* Pods_AnnieCannonsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnnieCannonsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E6C8D0F07E4EDC5521627D3 /* Pods_AnnieCannonsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +65,8 @@
 			children = (
 				74DD1011244529BB00B9C4DC /* AnnieCannonsApp */,
 				74DD1010244529BB00B9C4DC /* Products */,
+				E4ADA98C0C39D3335DC1CF2B /* Pods */,
+				B1831B80F5D12CF47AE64978 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,8 +95,27 @@
 				74DD102E24453FB900B9C4DC /* Person.swift */,
 				74968AAD2449217B006DE012 /* PersonTableViewCell.swift */,
 				74968AAE2449217B006DE012 /* PersonTableViewCell.xib */,
+				7444C6E3244FC631008757CE /* WeatherDataManager.swift */,
+				7444C6E5244FCBCE008757CE /* CurrentWeatherData.swift */,
 			);
 			path = AnnieCannonsApp;
+			sourceTree = "<group>";
+		};
+		B1831B80F5D12CF47AE64978 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B346817E3DF4C87530094A8E /* Pods_AnnieCannonsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4ADA98C0C39D3335DC1CF2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				988F7793066839644F2B8F79 /* Pods-AnnieCannonsApp.debug.xcconfig */,
+				4B7CCBCBEBB00327770E0049 /* Pods-AnnieCannonsApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74DD1023244529BC00B9C4DC /* Build configuration list for PBXNativeTarget "AnnieCannonsApp" */;
 			buildPhases = (
+				38FD147E0CF75910BA49471E /* [CP] Check Pods Manifest.lock */,
 				74DD100B244529BB00B9C4DC /* Sources */,
 				74DD100C244529BB00B9C4DC /* Frameworks */,
 				74DD100D244529BB00B9C4DC /* Resources */,
+				CD3E31AD4A7A603DE30AC96E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,15 +189,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38FD147E0CF75910BA49471E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnnieCannonsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD3E31AD4A7A603DE30AC96E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnnieCannonsApp/Pods-AnnieCannonsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnnieCannonsApp/Pods-AnnieCannonsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnnieCannonsApp/Pods-AnnieCannonsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74DD100B244529BB00B9C4DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7444C6E4244FC631008757CE /* WeatherDataManager.swift in Sources */,
 				74DD102F24453FB900B9C4DC /* Person.swift in Sources */,
 				74DD1017244529BB00B9C4DC /* ViewController.swift in Sources */,
 				74DD102824452D4C00B9C4DC /* TapCounterViewController.swift in Sources */,
 				74DD102C244530D100B9C4DC /* PersonListViewController.swift in Sources */,
+				7444C6E6244FCBCE008757CE /* CurrentWeatherData.swift in Sources */,
 				74DD1013244529BB00B9C4DC /* AppDelegate.swift in Sources */,
 				74968AAF2449217B006DE012 /* PersonTableViewCell.swift in Sources */,
 				74DD1015244529BB00B9C4DC /* SceneDelegate.swift in Sources */,
@@ -310,6 +386,7 @@
 		};
 		74DD1024244529BC00B9C4DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 988F7793066839644F2B8F79 /* Pods-AnnieCannonsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +404,7 @@
 		};
 		74DD1025244529BC00B9C4DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B7CCBCBEBB00327770E0049 /* Pods-AnnieCannonsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

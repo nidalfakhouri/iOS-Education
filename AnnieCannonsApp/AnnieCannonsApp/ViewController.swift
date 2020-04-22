@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -14,6 +16,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         title = "Home Screen"
         // Do any additional setup after loading the view.
+        
+        // 1
+        WeatherDataManager.shared.getWeatherData { (weatherData) in
+            // 8
+            print("ViewController: \(weatherData?.temp)")
+        }
     }
     
     @IBAction func showTapCounter(_ sender: Any) {
