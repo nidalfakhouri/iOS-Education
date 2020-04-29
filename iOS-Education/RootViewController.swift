@@ -20,6 +20,7 @@ enum SwiftExample: Int {
     case currentLocation
     case urlSession
     case viewAnimation
+    case formSheet
     case alamofire
     case weatherApp
 }
