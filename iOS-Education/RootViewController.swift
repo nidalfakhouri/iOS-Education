@@ -19,6 +19,7 @@ enum SwiftExample: Int {
     case autolayout
     case currentLocation
     case urlSession
+    case viewAnimation
     case alamofire
     case weatherApp
 }

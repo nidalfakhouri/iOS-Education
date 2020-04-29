@@ -12,21 +12,37 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var weatherButton: UIButton!
+    
+    @IBOutlet weak var animationView: UIView!
+    
+    var defaultPosition = CGPoint.zero
+    var isAnimationViewShown = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Home Screen"
         // Do any additional setup after loading the view.
-        
-        // 1
-        WeatherDataManager.shared.getWeatherData { (weatherData) in
-            // 8
-            print("ViewController: \(weatherData?.temp)")
-        }
+
+        defaultPosition = animationView.frame.origin
     }
     
     @IBAction func showTapCounter(_ sender: Any) {
         let viewController = TapCounterViewController(nibName: "TapCounterViewController", bundle: nil)
-        navigationController?.pushViewController(viewController, animated: true)
+        navigationController?.pushViewController(viewController, animated: true)        
+    }
+    
+    @IBAction func animate(_ sender: Any) {
+        UIView.animate(withDuration: 2.0) {
+            if self.isAnimationViewShown == false {
+                self.animationView.frame = CGRect(x: 0, y: 88, width: 240, height: 128)
+                self.isAnimationViewShown = true
+            }
+            else {
+                self.animationView.frame = CGRect(x: self.defaultPosition.x, y: self.defaultPosition.y, width: 240, height: 128)
+                self.isAnimationViewShown = false
+            }
+        }
     }
     
     @IBAction func showPersonList(_ sender: Any) {
@@ -40,6 +56,18 @@ class ViewController: UIViewController {
         
         viewController.people = newPeople
         
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func showWeatherData(_ sender: Any) {
+        let viewController = FiveDayWeatherDataViewController(nibName: "FiveDayWeatherDataViewController", bundle: nil)
+        viewController.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
+        viewController.modalPresentationStyle = .fullScreen
+        present(viewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func showForm(_ sender: Any) {
+        let viewController = FormViewController(nibName: "FormViewController", bundle: nil)
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
