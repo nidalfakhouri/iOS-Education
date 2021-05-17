@@ -34,6 +34,7 @@
 		7423AE2C20AA54F400E414EB /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AE2A20AA54F400E414EB /* CustomCollectionViewCell.swift */; };
 		7423AE2D20AA54F400E414EB /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */; };
 		742D93C0244E913300D3A94C /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D93BF244E913300D3A94C /* UIView+Helpers.swift */; };
+		7485635C2652B3C80049B3E9 /* CodeSnippets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7485635B2652B3C80049B3E9 /* CodeSnippets.swift */; };
 		74BD844520B3BC3600C25AF2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BD844420B3BC3600C25AF2 /* WeatherData.swift */; };
 		74CDAF092089385C006F7548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF082089385C006F7548 /* AppDelegate.swift */; };
 		74CDAF0B2089385C006F7548 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDAF0A2089385C006F7548 /* RootViewController.swift */; };
@@ -82,6 +83,7 @@
 		7423AE2B20AA54F400E414EB /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		742D93BF244E913300D3A94C /* UIView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
 		747EB19320CF5C1100016B2D /* Outline */ = {isa = PBXFileReference; lastKnownFileType = text; path = Outline; sourceTree = "<group>"; };
+		7485635B2652B3C80049B3E9 /* CodeSnippets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippets.swift; sourceTree = "<group>"; };
 		74BD844420B3BC3600C25AF2 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		74CDAF052089385C006F7548 /* iOS-Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CDAF082089385C006F7548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				74CDAF082089385C006F7548 /* AppDelegate.swift */,
 				74CDAF0A2089385C006F7548 /* RootViewController.swift */,
+				7485635B2652B3C80049B3E9 /* CodeSnippets.swift */,
 				74D985F820A38E36004C237B /* Views */,
 				74D985FD20A3969F004C237B /* Buttons And Labels */,
 				74E2D63920D202260059BB32 /* Timer */,
@@ -454,6 +457,7 @@
 				7423AE0220AA20B800E414EB /* CustomTableViewExampleViewController.swift in Sources */,
 				7423AE2520AA2A6000E414EB /* WeatherDataManager.swift in Sources */,
 				7423AE1820AA246000E414EB /* AlamofireNetworkingExampleViewController.swift in Sources */,
+				7485635C2652B3C80049B3E9 /* CodeSnippets.swift in Sources */,
 				74E9D9C820AD144000763C77 /* Person.swift in Sources */,
 				7423AE2C20AA54F400E414EB /* CustomCollectionViewCell.swift in Sources */,
 				7423ADFA20AA208600E414EB /* SimpleTableViewExampleViewController.swift in Sources */,
