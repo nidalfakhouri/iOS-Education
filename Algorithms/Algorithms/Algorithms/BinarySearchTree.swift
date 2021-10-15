@@ -73,17 +73,6 @@ class BinaryTreeNode<T: Comparable> {
     }
     
     func balanceTree() {
-        
-        guard isBalanced() == false else {
-            return
-        }
-        
-        let leftHeight = getNodeHeight(left)
-        let rightHeight = getNodeHeight(right)
-        
-        let isLeftHeavy = (leftHeight - rightHeight) > 1
-        let isRightHeavy = (rightHeight - leftHeight) > 1
-        
         if isLeftHeavy == true {
             rotateRight()
         }
@@ -93,17 +82,21 @@ class BinaryTreeNode<T: Comparable> {
     }
     
     func isBalanced() -> Bool {
-        
+        return isLeftHeavy == false || isRightHeavy == false
+    }
+    
+    var isLeftHeavy: Bool {
         let leftHeight = getNodeHeight(left)
         let rightHeight = getNodeHeight(right)
-        let heightDifference = abs(leftHeight - rightHeight)
-        
-        if heightDifference > 1 {
-            return false
-        }
-        else {
-            return true
-        }
+        let isLeftHeavy = (leftHeight - rightHeight) > 1
+        return isLeftHeavy
+    }
+    
+    var isRightHeavy: Bool {
+        let leftHeight = getNodeHeight(left)
+        let rightHeight = getNodeHeight(right)
+        let isRightHeavy = (rightHeight - leftHeight) > 1
+        return isRightHeavy
     }
     
     func isLeafNode() -> Bool {
@@ -139,15 +132,14 @@ extension BinaryTreeNode {
             left = BinaryTreeNode(value: originalValue)
         }
         
-        if let leftRightValue = right?.left?.value {
-            left?.addNode(newValue: leftRightValue)
-        }
+        let rightLeft = right?.left
         
         right = right?.right
+        right?.left = rightLeft
     }
     
     func rotateRight() {
-        
+
         guard let leftValue = left?.value else {
             return
         }
@@ -164,22 +156,11 @@ extension BinaryTreeNode {
             right = BinaryTreeNode(value: originalValue)
         }
         
-        if let rightLeftValue = left?.right?.value {
-            right?.addNode(newValue: rightLeftValue)
-        }
+        let leftRight = left?.right
         
         //adjust the left node
         left = left?.left
-    }
-    
-    func rotateLeftRight() {
-        left?.rotateLeft()
-        rotateRight()
-    }
-    
-    func rotateRightLeft() {
-        right?.rotateRight()
-        rotateLeft()
+        left?.right = leftRight
     }
 }
 
@@ -296,23 +277,51 @@ struct BinarySearchTree {
         //let numberList : Array<Int> = [8, 2, 10, 9, 11, 1, 7, 99]
         //let numberList : Array<Int> = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
         //let numberList = [1,2,3,4,5,6]
-        let numberList = [6,5,4,3,2,1]
-        
-        //create a new BST instance
-        let root = BinaryTreeNode<Int>(value: nil)
-
+        //let numberList = [6,5,4,3,2,1]
+        /*
         //sort each item in the list
         for number in numberList {
             root.addNode(newValue: number)
-            root.preOrderTraversal()
-            print("*********")
         }
+        */
         
-        root.preOrderTraversal()
-        print("root.isBalanced(root): \(root.isBalanced())")
+        let startIndex = 1
+        let endIndex = 10
         
+        let root = BinaryTreeNode<Int>(value: nil)
+        for index in startIndex...endIndex {
+            root.addNode(newValue: index)
+        }
+
+        //root.preOrderTraversal()
+        //print("root.isBalanced(root): \(root.isBalanced())")
+        print("numberOfNodesInTree(node: root): \(numberOfNodesInTree(node: root))")
+        print("Has all nodes in tree: \(numberOfNodesInTree(node: root) == (endIndex - startIndex))")
+    
         //BinaryTreeNode.printRootToLeafPaths(node: root, pathString: "")
         //print("findDistance: \(findDistance(root: root, x: root.left, y: root.right))")
+    }
+    
+    static func valueExsisitsInTree(node: BinaryTreeNode<Int>?, value: Int) -> Bool {
         
+        guard let node = node else {
+            return false
+        }
+        
+        if let nodeValue = node.value, nodeValue == value {
+            return true
+        }
+        else {
+            return valueExsisitsInTree(node: node.left, value: value) || valueExsisitsInTree(node: node.right, value: value)
+        }
+    }
+    
+    static func numberOfNodesInTree(node: BinaryTreeNode<Int>?) -> Int {
+        
+        guard let node = node, node.value != nil else {
+            return 0
+        }
+        
+        return numberOfNodesInTree(node: node.left) + numberOfNodesInTree(node: node.right) + 1
     }
 }
