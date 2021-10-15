@@ -31,7 +31,9 @@ class Queue {
         if last != nil {
             last?.next = newQueueNode
         }
+        
         last = newQueueNode
+        
         if first == nil {
             first = last
         }
@@ -125,7 +127,7 @@ class QueueUsingTwoStacks {
 struct QueueTest {
     
     static func QueueTest() {
-
+        test1()
     }
     
     static func test1() {
@@ -133,9 +135,16 @@ struct QueueTest {
         queue.add(value: 10)
         queue.add(value: 20)
         queue.add(value: 30)
+        
+        
+        /*
+        queue.printQueue()
+        
+        queue.add(value: 30)
         queue.printQueue()
         _ = queue.remove()
         queue.printQueue()
+         */
     }
     
     static func test2() {

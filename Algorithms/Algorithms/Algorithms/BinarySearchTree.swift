@@ -82,7 +82,7 @@ class BinaryTreeNode<T: Comparable> {
     }
     
     func isBalanced() -> Bool {
-        return isLeftHeavy == false || isRightHeavy == false
+        return isLeftHeavy == false && isRightHeavy == false
     }
     
     var isLeftHeavy: Bool {
@@ -294,8 +294,8 @@ struct BinarySearchTree {
         }
 
         //root.preOrderTraversal()
-        //print("root.isBalanced(root): \(root.isBalanced())")
-        print("numberOfNodesInTree(node: root): \(numberOfNodesInTree(node: root))")
+        print("isBalanced: \(root.isBalanced())")
+        print("numberOfNodesInTree: \(numberOfNodesInTree(node: root))")
         print("Has all nodes in tree: \(numberOfNodesInTree(node: root) == (endIndex - startIndex))")
     
         //BinaryTreeNode.printRootToLeafPaths(node: root, pathString: "")

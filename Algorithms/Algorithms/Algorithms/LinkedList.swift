@@ -13,7 +13,6 @@ class LinkedListNode<T: Comparable> {
     var last: LinkedListNode? = nil
     var data: T
     
-    
     init(data: T) {
         self.data = data
     }
@@ -28,17 +27,6 @@ class LinkedListNode<T: Comparable> {
         last = LinkedListNode(data: newData)
         
         currentNode?.next = last
-    }
-    
-    func updateLast() {
-        
-        var currentNode: LinkedListNode? = self
-        
-        while currentNode?.next != nil {
-            currentNode = currentNode?.next
-        }
-        
-        last = currentNode
     }
     
     func contains(data: T) -> Bool {
